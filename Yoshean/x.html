@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>APU Karting Club</title>
+<style>
+ 
+  /* ===== GLOBAL STYLES ===== */
+  body {
+    background-color: #0c0c0e;
+    color: #f2efe8;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.5;
+  }
+ 
+  h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: #f2efe8;
+  }
+ 
+  a {
+    color: #f2efe8;
+    text-decoration: none;
+  }
+ 
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+ 
+  .btn {
+    display: inline-block;
+    background-color: #e2332a;
+    color: #f2efe8;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+ 
+  .btn-outline {
+    display: inline-block;
+    border: 1px solid #f2efe8;
+    color: #f2efe8;
+    padding: 12px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+ 
+  /* ===== NAVIGATION BAR ===== */
+  nav {
+    background-color: #17171a;
+    padding: 15px 0;
+  }
+ 
+  nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .logo {
+    font-size: 22px;
+    font-weight: bold;
+  }
+ 
+  .logo span {
+    color: #e2332a;
+  }
+ 
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  /* ===== HERO SECTION ===== */
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    border-bottom: 1px solid #333;
+  }
+ 
+  .hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+ 
+  .hero h1 span {
+    color: #e2332a;
+  }
+ 
+  .hero p {
+    font-size: 18px;
+    color: #cfccc4;
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+  }
+ 
+  /* ===== STATS SECTION (using a table-like grid) ===== */
+  .stats {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 1px solid #333;
+  }
+ 
+  .stat-box {
+    padding: 0 30px;
+  }
+ 
+  .stat-number {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ffb400;
+  }
+ 
+  .stat-label {
+    font-size: 13px;
+    color: #85888f;
+  }
+ 
+  /* ===== GENERAL SECTION ===== */
+  .section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #333;
+  }
+ 
+  .section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+ 
+  .section > .container > p {
+    color: #85888f;
+    margin-bottom: 40px;
+  }
+ 
+  /* ===== ABOUT LIST ===== */
+  .about-item {
+    border-top: 1px solid #333;
+    padding: 20px 0;
+  }
+ 
+  .about-item h3 {
+    margin-bottom: 5px;
+  }
+ 
+  .about-item p {
+    color: #85888f;
+  }
+ 
+  /* ===== SESSION CARD ===== */
+  .session-card {
+    background-color: #17171a;
+    border: 1px solid #333;
+    border-radius: 6px;
+    padding: 30px;
+  }
+ 
+  .session-card h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+ 
+  .session-info {
+    margin-bottom: 10px;
+  }
+ 
+  .session-info b {
+    color: #85888f;
+    font-weight: normal;
+  }
+ 
+  /* ===== GALLERY (simple grid, no images, just colored boxes) ===== */
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+ 
+  .gallery-box {
+    background-color: #17171a;
+    width: 30%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #85888f;
+    font-size: 14px;
+    border-radius: 4px;
+  }
+ 
+  /* ===== JOIN / CALL TO ACTION ===== */
+  .join {
+    text-align: center;
+    padding: 80px 20px;
+  }
+ 
+  .join h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+  }
+ 
+  .join p {
+    color: #85888f;
+    margin-bottom: 30px;
+  }
+ 
+  /* ===== FOOTER ===== */
+  footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #85888f;
+    font-size: 14px;
+  }
+ 
+</style>
+</head>
+<body>
+ 
+  <!-- NAVIGATION -->
+<nav>
+<div class="container">
+<div class="logo">APU <span>KARTING</span></div>
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#sessions">Sessions</a></li>
+<li><a href="#gallery">Gallery</a></li>
+</ul>
+<a class="btn" href="#join">Join the grid</a>
+</div>
+</nav>
+ 
+  <!-- HERO -->
+<section class="hero">
+<div class="container">
+<h1>Life's stressful.<br>Go <span>faster</span> than it.</h1>
+<p>We're APU's karting club: real seat time, real circuits, no experience required.</p>
+<a class="btn" href="#join">Join us now</a>
+<a class="btn-outline" href="https://www.instagram.com/apu.karting" target="_blank">Follow us</a>
+</div>
+</section>
+ 
+  <!-- STATS -->
+<section class="stats">
+<div class="stat-box">
+<div class="stat-number">80+</div>
+<div class="stat-label">members</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">2</div>
+<div class="stat-label">sessions this term</div>
+</div>
+<div class="stat-box">
+<div class="stat-number">20</div>
+<div class="stat-label">seats per session</div>
+</div>
+</section>
+ 
+  <!-- ABOUT -->
+<section class="section" id="about">
+<div class="container">
+<h2>Built by racers, run for racers</h2>
+<p>We're a student-run club at APU. No garage required — just show up and race.</p>
+ 
+      <div class="about-item">
+<h3>Track sessions</h3>
+<p>Booked circuit time with briefings, heats, and lap timing.</p>
+</div>
+<div class="about-item">
+<h3>No kart, no problem</h3>
+<p>Everything's provided on the day — helmets, karts, and instruction.</p>
+</div>
+<div class="about-item">
+<h3>A grid, not just a group chat</h3>
+<p>Standings, rivalries, and a podium that actually gets contested.</p>
+</div>
+</div>
+</section>
+ 
+  <!-- NEXT SESSION -->
+<section class="section" id="sessions">
+<div class="container">
+<h2>Next session</h2>
+<p>Seats go fast — sign-up opens to members first.</p>
+ 
+      <div class="session-card">
+<h3>Karting Session</h3>
+<div class="session-info"><b>Circuit:</b> Aylezo Speedway Circuit</div>
+<div class="session-info"><b>Date:</b> 15 August 2026</div>
+<div class="session-info"><b>Time:</b> 6:00 PM – 7:30 PM</div>
+<br>
+<a class="btn" href="#join">Reserve a seat</a>
+</div>
+</div>
+</section>
+ 
+  <!-- GALLERY -->
+<section class="section" id="gallery">
+<div class="container">
+<h2>From the grid</h2>
+<p>Moments from our sessions, podiums, and the paddock in between.</p>
+ 
+      <div class="gallery">
+<div class="gallery-box">Side by side on the back straight</div>
+<div class="gallery-box">Chasing the apex</div>
+<div class="gallery-box">Race face on</div>
+<div class="gallery-box">Briefing before lights out</div>
+<div class="gallery-box">20 seats, gone in a day</div>
+<div class="gallery-box">Podium finishes</div>
+</div>
+</div>
+</section>
+ 
+  <!-- JOIN -->
+<section class="join" id="join">
+<div class="container">
+<h2>Your seat's on the grid. Take it.</h2>
+<p>Follow along for session dates, sign-ups, and results.</p>
+<a class="btn" href="https://www.instagram.com/apu.karting" target="_blank">Follow @apu.karting</a>
+<a class="btn-outline" href="#sessions">See next session</a>
+</div>
+</section>
+ 
+  <!-- FOOTER -->
+<footer>
+    APU KARTING CLUB — Official APU Karting Club
+</footer>
+ 
+</body>
+</html>
