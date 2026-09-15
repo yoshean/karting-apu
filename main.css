@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-/* ==========================================================================
-   APU KARTING CLUB - MAIN STYLESHEET
-   Adheres strictly to the AINT012-4-1-IAPP Lecture Slides:
-   - Slide 06: Cascading Style Sheet (CSS)
-     * HTML Selectors, Class Selectors (.name), ID Selectors (#id)
-     * Pseudo-classes (:hover, :active, :link, :visited)
-     * Color formats (Hex, RGB, RGBA, Color names)
-     * Box styling (background-color, color, font-family, font-size, border, padding, margin)
-   - Slide 05: HTML Web Forms CSS
-     * input, input[type=text], input[type=password], etc.
-     * :focus, :valid, :invalid
-   - Slide 04: Table and layout formatting
-   ========================================================================== */
 
 /* --- 1. Global Page Styles --- */
 * {
@@ -818,7 +804,7 @@ textarea {
     }
     .hero-title { font-size: 32px; }
 }
-=======
+
 body {
     background-color: #0c0c0e;
     color: #f2efe8;
@@ -922,4 +908,3 @@ body {
     color: #85888f;
     margin-bottom: 40px;
   }
->>>>>>> a5a9f2b242873a09853e46d35b416e5ec3119d98
