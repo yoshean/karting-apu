@@ -37,28 +37,78 @@
       <p>Everything you need to know before your first session.</p>
     </div>
   </section>
-  <!-- NEWS CONTENT -->
+<!-- NEWS CONTENT -->
 <section class="section">
   <div class="container">
     <h2>Latest news</h2>
     <p class="intro">Updates, results, and announcements from the club.</p>
 
-    <div class="card">
+    <div class="news-item featured">
+      <span class="news-tag">Latest</span>
+      <div class="news-date">20 September 2026</div>
       <h3>Season standings updated after Round 2</h3>
-      <div class="card-info"><b>Date:</b> 20 September 2026</div>
-      <div class="card-info"><b>Summary:</b> The grid tightened up after a close second round at Aylezo Speedway Circuit, with three drivers now separated by under ten points.</div>
+      <p>The grid tightened up after a close second round at Aylezo Speedway Circuit, with three drivers now separated by under ten points.</p>
     </div>
 
-    <div class="card">
+    <div class="news-item">
+      <span class="news-tag">Sessions</span>
+      <div class="news-date">5 September 2026</div>
       <h3>Sign-ups open for the September session</h3>
-      <div class="card-info"><b>Date:</b> 5 September 2026</div>
-      <div class="card-info"><b>Summary:</b> All 20 seats for the upcoming session are now open to members. Check the Calendar page for the date and time.</div>
+      <p>All 20 seats for the upcoming session are now open to members. Check the Calendar page for the date and time.</p>
     </div>
 
-    <div class="card">
+    <div class="news-item">
+      <span class="news-tag">Sponsors</span>
+      <div class="news-date">28 August 2026</div>
       <h3>New sponsor joins the club</h3>
-      <div class="card-info"><b>Date:</b> 28 August 2026</div>
-      <div class="card-info"><b>Summary:</b> We're excited to welcome a new sponsor on board for the rest of the season. More details on the Sponsors page.</div>
+      <p>We're excited to welcome a new sponsor on board for the rest of the season. More details on the Sponsors page.</p>
     </div>
   </div>
 </section>
+
+<style>
+  .news-item {
+    background-color: #17171a;
+    border: 1px solid #333;
+    border-left: 4px solid #e2332a;
+    border-radius: 6px;
+    padding: 24px 28px;
+    margin-bottom: 18px;
+  }
+
+  .news-item.featured {
+    border-left: 4px solid #ffb400;
+    background-color: #1c1c1f;
+  }
+
+  .news-tag {
+    display: inline-block;
+    background-color: #e2332a;
+    color: #f2efe8;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+  }
+
+  .news-item.featured .news-tag {
+    background-color: #ffb400;
+    color: #0c0c0e;
+  }
+
+  .news-date {
+    color: #85888f;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .news-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .news-item p {
+    color: #cfccc4;
+  }
+</style>
