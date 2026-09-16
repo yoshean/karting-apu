@@ -1,834 +1,28 @@
 
-/* --- 1. Global Page Styles --- */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background-color: #0d0e12;
-    color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    font-size: 15px;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #e10600;
-}
-
-img {
-    max-width: 100%;
-    border: none;
-}
-
-ul {
-    list-style-type: none;
-}
-
-/* Clearfix for float layout */
-.clear {
-    clear: both;
-}
-
-.container {
-    width: 90%;
-    max-width: 1040px;
-    margin: 0 auto;
-}
-
-.text-center { text-align: center; }
-.text-left { text-align: left; }
-.text-right { text-align: right; }
-.text-red { color: #e10600; }
-.text-amber { color: #f59e0b; }
-.text-muted { color: #9ca3af; }
-
-/* --- 2. Buttons (Slide 06) --- */
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    font-size: 15px;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-}
-
-.btn-red {
-    background-color: #e10600;
-    color: #ffffff;
-    border: 1px solid #e10600;
-}
-
-.btn-red:hover {
-    background-color: #ff221c;
-    color: #ffffff;
-}
-
-.btn-outline {
-    background-color: transparent;
-    color: #ffffff;
-    border: 1px solid #373e4b;
-}
-
-.btn-outline:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-    border-color: #6b7280;
-    color: #ffffff;
-}
-
-.btn-sm {
-    padding: 8px 16px;
-    font-size: 13px;
-}
-
-/* --- 3. Navigation Header --- */
-nav {
-    background-color: #0d0e12;
-    border-bottom: 1px solid #232730;
-    width: 100%;
-    padding: 16px 0;
-}
-
-nav .container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-nav .logo {
-    float: left;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ffffff;
-    line-height: 34px;
-}
-
-nav .logo span {
-    color: #e10600;
-}
-
-nav ul {
-    float: right;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    line-height: 34px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-left: 12px;
-}
-
-nav ul li a {
-    color: #9ca3af;
-    font-size: 13px;
-    font-weight: bold;
-    text-decoration: none;
-    padding: 6px 4px;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-    color: #ffffff;
-    border-bottom: 2px solid #e10600;
-}
-
-nav .container:after {
-    content: "";
-    display: block;
-    clear: both;
-}
-
-/* Page Header Section */
-section.page-header,
-.page-header {
-    background-color: #12141a;
-    border-bottom: 1px solid #232730;
-    padding: 46px 0 40px 0;
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-.page-header h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 10px;
-}
-
-.page-header h1 span {
-    color: #e10600;
-}
-
-.page-header p {
-    font-size: 15px;
-    color: #9ca3af;
-    max-width: 660px;
-    margin: 0 auto;
-}
-
-.site-header {
-    background-color: #0d0e12;
-    border-bottom: 1px solid #232730;
-    width: 100%;
-}
-
-.nav-container {
-    width: 90%;
-    max-width: 1040px;
-    margin: 0 auto;
-    padding: 14px 0;
-}
-
-.brand-logo {
-    float: left;
-    font-weight: bold;
-    font-size: 20px;
-    color: #ffffff;
-    line-height: 38px;
-}
-
-.brand-logo img {
-    width: 32px;
-    height: 32px;
-    vertical-align: middle;
-    margin-right: 8px;
-    border-radius: 4px;
-}
-
-.brand-logo span {
-    color: #e10600;
-}
-
-.nav-menu {
-    float: right;
-    line-height: 38px;
-}
-
-.nav-item {
-    display: inline-block;
-    position: relative;
-    margin-left: 18px;
-}
-
-.nav-link {
-    font-size: 14px;
-    font-weight: bold;
-    color: #9ca3af;
-    padding: 8px 4px;
-}
-
-.nav-link:hover,
-.nav-link.active {
-    color: #ffffff;
-}
-
-/* Dropdown menu (Slide 06 hover selector) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #15181e;
-    border: 1px solid #232730;
-    border-radius: 6px;
-    min-width: 200px;
-    z-index: 100;
-    padding: 6px 0;
-    text-align: left;
-}
-
-.dropdown-content a {
-    display: block;
-    padding: 8px 16px;
-    color: #9ca3af;
-    font-size: 13px;
-    font-weight: normal;
-    line-height: 20px;
-}
-
-.dropdown-content a:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    color: #ffffff;
-}
-
-.nav-item:hover .dropdown-content {
-    display: block;
-}
-
-.nav-toggle {
-    display: none;
-    float: right;
-    background: none;
-    border: none;
-    color: #ffffff;
-    font-size: 24px;
-    cursor: pointer;
-    line-height: 38px;
-}
-
-/* --- 4. Hero Section (Home) --- */
-.hero-section {
-    padding: 80px 0 50px 0;
-    text-align: center;
-}
-
-.hero-title {
-    font-size: 52px;
-    font-weight: bold;
-    line-height: 1.15;
-    margin-bottom: 20px;
-}
-
-.hero-subtitle {
-    font-size: 18px;
-    color: #9ca3af;
-    max-width: 580px;
-    margin: 0 auto 34px auto;
-}
-
-.hero-buttons {
-    margin-bottom: 60px;
-}
-
-/* --- 5. Stats Section --- */
-.stats-section {
-    padding: 30px 0 70px 0;
-    text-align: center;
-}
-
-.stat-col {
-    display: inline-block;
-    width: 30%;
-    vertical-align: top;
-    text-align: center;
-}
-
-.stat-number {
-    font-size: 42px;
-    font-weight: bold;
-    color: #f59e0b;
-    line-height: 1;
-    margin-bottom: 8px;
-}
-
-.stat-label {
-    font-size: 14px;
-    color: #9ca3af;
-}
-
-/* --- 6. Feature List ("Built by racers, run for racers") --- */
-.features-section {
-    padding: 60px 0;
-}
-
-.section-header {
-    margin-bottom: 36px;
-}
-
-.section-title {
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 8px;
-}
-
-.section-subtitle {
-    color: #9ca3af;
-    font-size: 15px;
-}
-
-.feature-row {
-    padding: 22px 0;
-    border-top: 1px solid #232730;
-}
-
-.feature-row-last {
-    padding: 22px 0;
-    border-top: 1px solid #232730;
-    border-bottom: 1px solid #232730;
-}
-
-.feature-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-bottom: 6px;
-}
-
-.feature-desc {
-    color: #9ca3af;
-    font-size: 15px;
-}
-
-/* --- 7. Next Session Card --- */
-.session-section {
-    padding: 50px 0 70px 0;
-}
-
-.session-card {
-    background-color: #15181e;
-    border: 1px solid #232730;
-    border-radius: 8px;
-    padding: 36px 40px;
-    margin-top: 20px;
-}
-
-.session-card-title {
-    font-size: 26px;
-    font-weight: bold;
-    margin-bottom: 18px;
-    color: #ffffff;
-}
-
-.session-details {
-    margin-bottom: 26px;
-}
-
-.session-detail-item {
-    font-size: 15px;
-    color: #9ca3af;
-    margin-bottom: 8px;
-}
-
-.session-detail-item b {
-    color: #ffffff;
-}
-
-/* --- 8. "From the Grid" Image Cards --- */
-.grid-section {
-    padding: 50px 0 80px 0;
-}
-
-.grid-cards-container {
-    margin-top: 24px;
-    text-align: center;
-}
-
-.grid-card {
-    display: inline-block;
-    width: 31%;
-    margin: 1%;
-    vertical-align: top;
-    background-color: #15181e;
-    border: 1px solid #232730;
-    border-radius: 8px;
-    height: 180px;
-    padding: 24px 16px;
-    text-align: center;
-    color: #9ca3af;
-    box-sizing: border-box;
-}
-
-.grid-card:hover {
-    border-color: #e10600;
-    color: #ffffff;
-    background-color: #1b1f27;
-}
-
-.grid-card-text {
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 1.4;
-    padding-top: 40px;
-}
-
-/* --- 9. Call to Action Banner --- */
-.cta-section {
-    padding: 80px 0;
-    text-align: center;
-    border-top: 1px solid #232730;
-}
-
-.cta-title {
-    font-size: 38px;
-    font-weight: bold;
-    margin-bottom: 12px;
-}
-
-.cta-subtitle {
-    color: #9ca3af;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-
-/* --- 10. Page Header for Subpages --- */
-.page-hero {
-    padding: 50px 0 36px 0;
-    border-bottom: 1px solid #232730;
-    margin-bottom: 44px;
-}
-
-.page-badge {
-    display: inline-block;
-    background-color: rgba(225, 6, 0, 0.15);
-    color: #e10600;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 1px;
-    padding: 4px 12px;
-    border-radius: 20px;
-    margin-bottom: 14px;
-    border: 1px solid rgba(225, 6, 0, 0.3);
-}
-
-.page-title {
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.page-description {
-    color: #9ca3af;
-    font-size: 16px;
-    max-width: 650px;
-}
-
-/* General Box Cards */
-.card {
-    background-color: #15181e;
-    border: 1px solid #232730;
-    border-radius: 8px;
-    padding: 26px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-}
-
-.card:hover {
-    border-color: #373e4b;
-}
-
-.card-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-/* Column Utilities using inline-block (Slide 06) */
-.col-half {
-    display: inline-block;
-    width: 48%;
-    margin-right: 3%;
-    vertical-align: top;
-    box-sizing: border-box;
-}
-
-.col-half-last {
-    display: inline-block;
-    width: 48%;
-    vertical-align: top;
-    box-sizing: border-box;
-}
-
-.col-third {
-    display: inline-block;
-    width: 31%;
-    margin-right: 2.5%;
-    vertical-align: top;
-    box-sizing: border-box;
-}
-
-.col-third-last {
-    display: inline-block;
-    width: 31%;
-    vertical-align: top;
-    box-sizing: border-box;
-}
-
-/* --- 11. Form Styling (Slide 05 & Slide 06) --- */
-.form-container {
-    max-width: 680px;
-    margin: 0 auto 60px auto;
-    background-color: #15181e;
-    border: 1px solid #232730;
-    border-radius: 8px;
-    padding: 36px;
-    box-sizing: border-box;
-}
-
-.form-group {
-    margin-bottom: 20px;
-    text-align: left;
-}
-
-.form-label {
-    display: block;
-    font-size: 14px;
-    font-weight: bold;
-    color: #e5e7eb;
-    margin-bottom: 6px;
-}
-
-.required {
-    color: #e10600;
-}
-
-/* Slide 05 slide 13: Styling Input Fields */
-input[type=text],
-input[type=password],
-input[type=email],
-input[type=tel],
-input[type=number],
-select,
-textarea {
-    width: 100%;
-    padding: 12px 14px;
-    background-color: #0b0d10;
-    border: 1px solid #232730;
-    border-radius: 6px;
-    color: #ffffff;
-    font-family: inherit;
-    font-size: 14px;
-    box-sizing: border-box;
-}
-
-/* Slide 05 slide 14: :focus and :valid/:invalid */
-input:focus,
-select:focus,
-textarea:focus {
-    outline: none;
-    border-color: #e10600;
-}
-
-textarea {
-    resize: vertical;
-    min-height: 110px;
-}
-
-.form-alert {
-    padding: 12px 16px;
-    border-radius: 6px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    display: none;
-}
-
-.alert-success {
-    background-color: rgba(34, 197, 94, 0.15);
-    border: 1px solid #22c55e;
-    color: #4ade80;
-}
-
-.alert-error {
-    background-color: rgba(239, 68, 68, 0.15);
-    border: 1px solid #ef4444;
-    color: #f87171;
-}
-
-/* --- 12. Tables (Slide 04 & Slide 06) --- */
-.table-box {
-    width: 100%;
-    overflow-x: auto;
-    background-color: #15181e;
-    border: 1px solid #232730;
-    border-radius: 8px;
-    margin-top: 20px;
-}
-
-.racing-table {
-    width: 100%;
-    border-collapse: collapse;
-    text-align: left;
-    font-size: 14px;
-}
-
-.racing-table th {
-    background-color: rgba(255, 255, 255, 0.04);
-    padding: 14px 18px;
-    border-bottom: 1px solid #232730;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.racing-table td {
-    padding: 14px 18px;
-    border-bottom: 1px solid #232730;
-    color: #9ca3af;
-}
-
-.racing-table tr:hover td {
-    background-color: rgba(255, 255, 255, 0.02);
-    color: #ffffff;
-}
-
-/* Flags Box (Slide 04 tables/divs) */
-.flag-card {
-    padding: 16px 20px;
-    background-color: #15181e;
-    border: 1px solid #232730;
-    border-radius: 6px;
-    margin-bottom: 14px;
-}
-
-.flag-color-box {
-    display: inline-block;
-    width: 44px;
-    height: 32px;
-    border-radius: 4px;
-    vertical-align: middle;
-    margin-right: 16px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.flag-green { background-color: #22c55e; }
-.flag-yellow { background-color: #eab308; }
-.flag-red { background-color: #ef4444; }
-.flag-blue { background-color: #3b82f6; }
-.flag-black { background-color: #000000; border: 1px solid #ffffff; }
-.flag-chequered { background-color: #ffffff; color: #000000; text-align: center; font-weight: bold; line-height: 32px; font-size: 18px; }
-
-/* FAQ Accordion (Slide 07 JavaScript) */
-.faq-item {
-    background-color: #15181e;
-    border: 1px solid #232730;
-    border-radius: 6px;
-    margin-bottom: 14px;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.faq-question {
-    padding: 18px 22px;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.faq-answer {
-    padding: 0 22px 18px 22px;
-    color: #9ca3af;
-    font-size: 14px;
-    border-top: 1px solid #232730;
-}
-
-/* Filter buttons (Slide 07 JavaScript) */
-.filter-btn {
-    padding: 8px 18px;
-    background-color: #15181e;
-    border: 1px solid #232730;
-    color: #9ca3af;
-    border-radius: 20px;
-    font-size: 13px;
-    font-weight: bold;
-    cursor: pointer;
-    margin: 0 4px;
-}
-
-.filter-btn:hover,
-.filter-btn.active {
-    background-color: #e10600;
-    color: #ffffff;
-    border-color: #e10600;
-}
-
-/* --- 13. Site Footer --- */
-.site-footer {
-    background-color: #08090b;
-    border-top: 1px solid #232730;
-    padding: 50px 0 26px 0;
-    margin-top: 60px;
-}
-
-.footer-col-brand {
-    display: inline-block;
-    width: 36%;
-    vertical-align: top;
-    box-sizing: border-box;
-    padding-right: 30px;
-}
-
-.footer-col {
-    display: inline-block;
-    width: 19%;
-    vertical-align: top;
-    box-sizing: border-box;
-}
-
-.footer-title {
-    font-size: 14px;
-    font-weight: bold;
-    color: #ffffff;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-}
-
-.footer-links a {
-    display: block;
-    color: #9ca3af;
-    font-size: 13px;
-    margin-bottom: 8px;
-}
-
-.footer-links a:hover {
-    color: #e10600;
-}
-
-.footer-bottom {
-    border-top: 1px solid #232730;
-    padding-top: 24px;
-    margin-top: 36px;
-    color: #6b7280;
-    font-size: 13px;
-}
-
-/* Responsive adjustments */
-@media (max-width: 900px) {
-    nav .logo { float: none; text-align: center; margin-bottom: 12px; }
-    nav ul { float: none; text-align: center; }
-    nav ul li { margin: 4px 6px; }
-}
-
-@media (max-width: 768px) {
-    .brand-logo { float: none; display: block; text-align: center; }
-    .nav-menu { float: none; display: none; text-align: center; margin-top: 10px; }
-    .nav-item { display: block; margin: 8px 0; }
-    .dropdown-content { position: static; display: block; }
-    .nav-toggle { display: block; }
-    .col-half, .col-half-last, .col-third, .col-third-last, .stat-col, .grid-card, .footer-col-brand, .footer-col {
-        display: block;
-        width: 100%;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-    .hero-title { font-size: 32px; }
-}
-
-body {
+  body {
     background-color: #0c0c0e;
     color: #f2efe8;
     font-family: Arial, sans-serif;
     margin: 0;
     line-height: 1.5;
   }
-
+ 
   h1, h2, h3 {
     font-family: Arial, sans-serif;
     color: #f2efe8;
   }
-
+ 
   a {
     color: #f2efe8;
     text-decoration: none;
   }
-
+ 
   .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 20px;
   }
-
+ 
   .btn {
     display: inline-block;
     background-color: #e2332a;
@@ -837,13 +31,13 @@ body {
     border-radius: 4px;
     font-weight: bold;
   }
-
+ 
   /* ===== NAVIGATION BAR ===== */
   nav {
     background-color: #17171a;
     padding: 15px 0;
   }
-
+ 
   nav .container {
     display: flex;
     justify-content: space-between;
@@ -851,16 +45,16 @@ body {
     flex-wrap: wrap;
     gap: 15px;
   }
-
+ 
   .logo {
     font-size: 22px;
     font-weight: bold;
   }
-
+ 
   .logo span {
     color: #e2332a;
   }
-
+ 
   nav ul {
     list-style: none;
     display: flex;
@@ -869,41 +63,41 @@ body {
     padding: 0;
     flex-wrap: wrap;
   }
-
+ 
   /* ===== PAGE HEADER ===== */
   .page-header {
     text-align: center;
     padding: 60px 20px;
     border-bottom: 1px solid #333;
   }
-
+ 
   .page-header h1 {
     font-size: 40px;
     margin-bottom: 10px;
   }
-
+ 
   .page-header h1 span {
     color: #e2332a;
   }
-
+ 
   .page-header p {
     font-size: 17px;
     color: #cfccc4;
     max-width: 500px;
     margin: 0 auto;
   }
-
+ 
   /* ===== SECTION ===== */
   .section {
     padding: 60px 20px;
     border-bottom: 1px solid #333;
   }
-
+ 
   .section h2 {
     font-size: 32px;
     margin-bottom: 10px;
   }
-
+ 
   .section > .container > p.intro {
     color: #85888f;
     margin-bottom: 40px;
