@@ -25,6 +25,45 @@
  
 
  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* ===== NAVIGATION BAR ===== */
   nav {
     background-color: #17171a;
@@ -106,7 +145,7 @@
 }
 
 #joinus{
-  padding-left: 300px;
+  padding-left: 450px;
 }
 
 .btn {
@@ -125,3 +164,18 @@
 #findmore{
   margin-left: 20px;
 }
+
+#red{
+  font-size: 80px;
+  margin-left: 200px;
+  color: #e2332a;
+  font-weight: bold;
+  text-align: center;
+}
+
+#white{
+  font-size: 20px;
+  margin-left: 200px;
+  text-align: center;
+}
+
