@@ -23,14 +23,7 @@
     padding: 20px;
   }
  
-  .btn {
-    display: inline-block;
-    background-color: #e2332a;
-    color: #f2efe8;
-    padding: 12px 24px;
-    border-radius: 4px;
-    font-weight: bold;
-  }
+
  
   /* ===== NAVIGATION BAR ===== */
   nav {
@@ -114,4 +107,17 @@
 
 #joinus{
   padding-left: 300px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e2332a;
+  color: #f2efe8;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover{
+  background-color:#9d2620;
 }
