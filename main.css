@@ -161,9 +161,16 @@
   background-color:#9d2620;
 }
 
-#findmore{
-  margin-left: 20px;
+#space{
+  padding-left: 100px;
 }
+
+#findmore{
+  margin-left: 10px;
+}
+
+
+
 
 #red{
   font-size: 80px;
