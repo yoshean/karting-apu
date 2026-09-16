@@ -23,14 +23,7 @@
     padding: 20px;
   }
  
-  .btn {
-    display: inline-block;
-    background-color: #e2332a;
-    color: #f2efe8;
-    padding: 12px 24px;
-    border-radius: 4px;
-    font-weight: bold;
-  }
+
  
   /* ===== NAVIGATION BAR ===== */
   nav {
@@ -47,7 +40,7 @@
   }
  
   .logo {
-    font-size: 22px;
+    font-size: 42px;
     font-weight: bold;
   }
  
@@ -102,3 +95,29 @@
     color: #85888f;
     margin-bottom: 40px;
   }
+
+
+
+
+
+
+#closelogo{
+  padding-left: 20px;
+}
+
+#joinus{
+  padding-left: 300px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e2332a;
+  color: #f2efe8;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn:hover{
+  background-color:#9d2620;
+}
