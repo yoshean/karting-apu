@@ -14,24 +14,24 @@
       <table>
         <tr>
           <td><img src="../Images/logo.jpg" alt="APU Karting Club Logo" width="100"></td>
-          <td id="closelogo"><div class="logo">APU <span>KARTING</span></div></td>
+          <td id="closelogo"><a href="../Yoshean/home.html"><div class="logo">APU <span>KARTING</span></div></a></td>
           <td id="joinus"><a href="../Aavaneesh/membership.html" class="btn">Join Us</a></td>
         </tr>
       </table>
       <ul>
-        <li><a href="../Yoshean/home.html">Home</a></li>
-        <li><a href="../Yoshean/about.html">About</a></li>
-        <li><a href="../Yoshean/committee.html">Committee</a></li>
-        <li><a href="../Sameer/calendar.html">Calendar</a></li>
-        <li><a href="../Sameer/gallery.html">Gallery</a></li>
-        <li><a href="../Sameer/news.html">News</a></li>
-        <li><a href="../Freeman/attire.html">Attire</a></li>
-        <li><a href="../Freeman/rules.html">Rules</a></li>
-        <li><a href="../Freeman/sponsors.html">Sponsors</a></li>
-        <li><a href="../Aavaneesh/membership.html">Membership</a></li>
-        <li><a href="../Aavaneesh/faq.html">FAQ</a></li>
-        <li><a href="../Aavaneesh/enquiry.html">Enquiry</a></li>
-        <li><a href="../Yoshean/contact.html">Contact</a></li>
+        <li><a href="../Yoshean/home.html" id="dropdown ">Home</a></li>
+        <li><a href="../Yoshean/about.html" id="dropdown">About</a></li>
+        <li><a href="../Yoshean/committee.html" id="dropdown">Committee</a></li>
+        <li><a href="../Sameer/calendar.html" id="dropdown">Calendar</a></li>
+        <li><a href="../Sameer/gallery.html" id="dropdown">Gallery</a></li>
+        <li><a href="../Sameer/news.html" id="dropdown">News</a></li>
+        <li><a href="../Freeman/attire.html" id="dropdown">Attire</a></li>
+        <li><a href="../Freeman/rules.html" id="dropdown">Rules</a></li>
+        <li><a href="../Freeman/sponsors.html" id="dropdown">Sponsors</a></li>
+        <li><a href="../Aavaneesh/membership.html" id="dropdown">Membership</a></li>
+        <li><a href="../Aavaneesh/faq.html" id="dropdown">FAQ</a></li>
+        <li><a href="../Aavaneesh/enquiry.html" id="dropdown">Enquiry</a></li>
+        <li><a href="../Yoshean/contact.html" id="dropdown">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -44,12 +44,31 @@
     </div>
   </section>
   <main>
-   
-    
 
 
+  <h1>Meet the Committee Board</h1>
 
-
+    <div class="gallery">
+      <div class="gallery-box">
+        <img src="../Images/president.png" alt="President" title="President">
+      </div>
+      <div class="gallery-box">
+        <img src="../Images/vicepres.png" alt="Vice President" title="Vice President">
+      </div>
+      <div class="gallery-box">
+        <img src="../Images/hfinance.png" alt="Head of Finance" title="Head of Finance">
+      </div>
+      <div class="gallery-box">
+        <img src="../Images/secretariat.png" alt="Secretariat" title="Secretariat">
+      </div>
+      <div class="gallery-box">
+        <img src="../Images/hmarketing.png" alt="Head of Marketing" title="Head of Marketing">
+      </div>
+      <div class="gallery-box">
+        <img src="../Images/hdesign.png" alt="Head of Design" title="Head of Design">
+      </div>
+    </div>
+  </div>
 
 
 
@@ -57,3 +76,38 @@
 
 
   </main>
+
+
+
+  <style>
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .gallery-box {
+    background-color: #1c1c1f;
+    border-left: 5px solid #e2332a;
+    border-radius: 6px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .gallery-box img {
+    width: 100%;
+    height: 107%;
+    object-fit: cover;
+  }
+
+.gallery-box img:hover{
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+
+</style>

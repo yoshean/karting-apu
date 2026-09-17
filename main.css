@@ -25,6 +25,47 @@
  
 
  
+
+
+
+#dropdown:hover{
+  background-color: #9d2620;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /* ===== NAVIGATION BAR ===== */
   nav {
     background-color: #17171a;
@@ -106,7 +147,7 @@
 }
 
 #joinus{
-  padding-left: 300px;
+  padding-left: 450px;
 }
 
 .btn {
@@ -121,3 +162,29 @@
 .btn:hover{
   background-color:#9d2620;
 }
+
+#space{
+  padding-left: 100px;
+}
+
+#findmore{
+  margin-left: 10px;
+}
+
+
+
+
+#red{
+  font-size: 80px;
+  margin-left: 200px;
+  color: #e2332a;
+  font-weight: bold;
+  text-align: center;
+}
+
+#white{
+  font-size: 20px;
+  margin-left: 200px;
+  text-align: center;
+}
+
