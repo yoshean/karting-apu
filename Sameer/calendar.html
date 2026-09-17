@@ -43,27 +43,30 @@
       <p>All our upcoming sessions in one place, updated as new dates are added.</p>
     </div>
   </section>
-  <!-- CALENDAR CONTENT -->
+<!-- CALENDAR CONTENT -->
 <section class="section">
   <div class="container">
     <h2>Upcoming sessions</h2>
     <p class="intro">All confirmed dates for this term. Sign-ups open closer to each date.</p>
 
     <div class="card">
-      <h3>Karting Session 1</h3>
+      <h3 style="color: #ffb400;">Karting Session 6</h3>
       <div class="card-info"><b>Circuit:</b> Aylezo Speedway Circuit</div>
-      <div class="card-info"><b>Date:</b> 29th September 2026</div>
+      <div class="card-info"><b>Date:</b> 29th October 2026</div>
       <div class="card-info"><b>Time:</b> 6:00 PM – 7:30 PM</div>
+      <div class="digital-countdown" id="timer1">00:00:00:00</div>
     </div>
 
     <div class="card">
-      <h3>Karting Session 2</h3>
+      <h3 style="color: #ffb400;">Karting Session 7</h3>
       <div class="card-info"><b>Circuit:</b> Aylezo Speedway Circuit</div>
-      <div class="card-info"><b>Date:</b> 7th October 2026</div>
+      <div class="card-info"><b>Date:</b> 7th November 2026</div>
       <div class="card-info"><b>Time:</b> 2:00 PM – 3:30 PM</div>
+      <div class="digital-countdown" id="timer2">00:00:00:00</div>
     </div>
   </div>
 </section>
+
 <style>
   .card {
     background-color: #1c1c1f;
@@ -74,7 +77,6 @@
   }
 
   .card h3 {
-    color: #ffb400;
     margin-bottom: 15px;
   }
 
@@ -86,4 +88,50 @@
   .card-info b {
     color: #f2efe8;
   }
+
+  .digital-countdown {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #333;
+    font-family: 'Courier New', monospace;
+    font-size: 32px;
+    font-weight: bold;
+    color: #e2332a;
+    letter-spacing: 4px;
+    text-align: center;
+    background-color: rgba(226, 51, 42, 0.05);
+    padding: 15px;
+    border-radius: 4px;
+  }
 </style>
+
+<script>
+  function updateTimer(elementId, raceDate, raceTime) {
+    const element = document.getElementById(elementId);
+    
+    function tick() {
+      const now = new Date();
+      const race = new Date(raceDate + ' ' + raceTime);
+      const timeLeft = race - now;
+      
+      if (timeLeft > 0) {
+        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+        const seconds = Math.floor((timeLeft / 1000) % 60);
+        
+        const pad = (num) => String(num).padStart(2, '0');
+        element.textContent = pad(days) + ':' + pad(hours) + ':' + pad(minutes) + ':' + pad(seconds);
+      } else {
+        element.textContent = '00:00:00:00';
+      }
+    }
+    
+    tick();
+    setInterval(tick, 1000);
+  }
+
+  // Start timers (adjust times to match your race start times)
+  updateTimer('timer1', '2026-10-29', '18:00:00');
+  updateTimer('timer2', '2026-11-07', '14:00:00');
+</script>
