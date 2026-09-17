@@ -14,8 +14,8 @@
       <table>
         <tr>
           <td><img src="../Images/logo.jpg" alt="APU Karting Club Logo" width="100"></td>
-          <td id="closelogo"><a href="../Yoshean/home.html"><div class="logo">APU <span>KARTING</span></div></a></td>
-          <td id="joinus"><a href="../Aavaneesh/membership.html" class="btn">Join Us</a></td>
+          <td id="gaplogotexthome"><a href="../Yoshean/home.html"><div class="logo">APU <span>KARTING</span></div></a></td>
+          <td id="spacejoinusbutton"><a href="../Aavaneesh/membership.html" class="btn">Join Us</a></td>
         </tr>
       </table>
       <ul>
@@ -51,26 +51,33 @@
 
     <div class="gallery">
       <div class="gallery-box">
-        <img src="../Images/sidebyside.png" alt="Side by side on the back straight" title="Side by side on the back straight">
+        <img src="../Images/sidebyside.png" alt="Side by side on the back straight">
+        <span class="caption">Side by side on the back straight</span>
       </div>
       <div class="gallery-box">
-        <img src="../Images/apex.png" alt="Chasing the apex" title="Chasing the apex">
+        <img src="../Images/apex.png" alt="Chasing the apex">
+        <span class="caption">Chasing the apex</span>
       </div>
       <div class="gallery-box">
-        <img src="../Images/faceon.png" alt="Race face on" title="Race face on">
+        <img src="../Images/faceon.png" alt="Race face on">
+        <span class="caption">Race face on</span>
       </div>
       <div class="gallery-box">
-        <img src="../Images/briefing.png" alt="Briefing before lights out" title="Briefing before lights out">
+        <img src="../Images/briefing.png" alt="Briefing before lights out">
+        <span class="caption">Briefing before lights out</span>
       </div>
       <div class="gallery-box">
-        <img src="../Images/20seats.png" alt="20 seats gone" title="20 seats gone">
+        <img src="../Images/20seats.png" alt="20 seats gone">
+        <span class="caption">20 seats, gone in a day</span>
       </div>
       <div class="gallery-box">
-        <img class="top-photo" src="../Images/podium.png" alt="Podium finish" title="Podium finish">
+        <img class="top-photo" src="../Images/podium.png" alt="Podium finish">
+        <span class="caption">Podium finishes</span>
       </div>
     </div>
   </div>
 </section>
+
 <style>
   .gallery {
     display: grid;
@@ -79,14 +86,11 @@
   }
 
   .gallery-box {
+    position: relative;
     background-color: #1c1c1f;
     border-left: 5px solid #e2332a;
     border-radius: 6px;
     height: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
     overflow: hidden;
   }
 
@@ -96,12 +100,42 @@
     object-fit: cover;
   }
 
-.gallery-box img:hover{
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
+  .gallery-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(236, 17, 5, 0.6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .gallery-box:hover::before {
+    opacity: 1;
+  }
 
   .top-photo {
-  object-position: center 35%;
-}
+    object-position: center 20%;
+  }
+
+  .caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    max-width: 90%;
+    z-index: 1;
+  }
+
+  .gallery-box:hover .caption {
+    opacity: 1;
+  }
 </style>

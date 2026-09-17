@@ -14,8 +14,8 @@
       <table>
         <tr>
           <td><img src="../Images/logo.jpg" alt="APU Karting Club Logo" width="100"></td>
-          <td id="closelogo"><a href="../Yoshean/home.html"><div class="logo">APU <span>KARTING</span></div></a></td>
-          <td id="joinus"><a href="../Aavaneesh/membership.html" class="btn">Join Us</a></td>
+          <td id="gaplogotexthome"><a href="../Yoshean/home.html"><div class="logo">APU <span>KARTING</span></div></a></td>
+          <td id="spacejoinusbutton"><a href="../Aavaneesh/membership.html" class="btn">Join Us</a></td>
         </tr>
       </table>
       <ul>
@@ -43,23 +43,149 @@
       <p>Everything you need to know before your first session.</p>
     </div>
   </section>
-  <main>
-    What are the frequently asked questions that are easily asked by you ?
-     <br>1. What should I wear for a karting session?
-     <br>as you  want to register, cick the membership page to register  the form that you can become the member
-     <p>
-     <br>2. Do I need prior experience to join?
-     <br>Yes, the prior experience is fastest to join and get in touch with us.
-     <p>
-    <br>3. How much does membership cost?
-    <br>The membership cost is only RM 5  in each month but full year is  RM 30.
-    <p>
-    <br>4. Are there safety measures in place?
-    <br>Yes, we have safety measures in place to ensure that we provide a safe enviroment for all our members.We have trained staff, safety gear and strict safety protocols to minimize risks and ensure a secure karting experience.
 
+  <!-- FAQ ACCORDION -->
+  <section class="section">
+    <div class="container">
+      <h2>General questions</h2>
+      <p class="intro">The basics most people ask before signing up.</p>
 
+      <div class="accordion">
+        <div class="accordion-item">
+          <button class="accordion-button">What should I wear for a karting session?</button>
+          <div class="accordion-answer">
+            <p>Wear closed shoes and comfortable clothes you don't mind getting sweaty in. Helmets and safety gear are provided on the day.</p>
+          </div>
+        </div>
 
+        <div class="accordion-item">
+          <button class="accordion-button">Do I need prior experience to join?</button>
+          <div class="accordion-answer">
+            <p>No, prior experience is not required. Most of our members show up never having driven a kart before. Briefings and instruction are included in every session.</p>
+          </div>
+        </div>
 
+        <div class="accordion-item">
+          <button class="accordion-button">How much does membership cost?</button>
+          <div class="accordion-answer">
+            <p>Membership costs RM 5 per month, or RM 30 for a full year. Check the Membership page to register and become a member.</p>
+          </div>
+        </div>
 
+        <div class="accordion-item">
+          <button class="accordion-button">Are there safety measures in place?</button>
+          <div class="accordion-answer">
+            <p>Yes, we have safety measures in place to ensure a safe environment for all our members. We have trained staff, safety gear, and strict safety protocols to minimize risks and ensure a secure karting experience.</p>
+          </div>
+        </div>
 
-  </main>
+        <div class="accordion-item">
+          <button class="accordion-button">How do I sign up for a session?</button>
+          <div class="accordion-answer">
+            <p>Sign-ups open to members first through our Instagram and WhatsApp group. Check the Calendar page for upcoming dates and available sessions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    APU KARTING CLUB — Official APU Karting Club
+  </footer>
+
+  <style>
+    .accordion {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .accordion-item {
+      border: 1px solid #333;
+      border-radius: 6px;
+      background-color: #17171a;
+      overflow: hidden;
+    }
+
+    .accordion-button {
+      width: 100%;
+      background-color: #17171a;
+      color: #f2efe8;
+      padding: 18px 20px;
+      border: none;
+      text-align: left;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s ease;
+    }
+
+    .accordion-button:hover {
+      background-color: #1c1c1f;
+    }
+
+    .accordion-button::after {
+      content: "▼";
+      font-size: 12px;
+      color: #e2332a;
+      transition: transform 0.3s ease;
+    }
+
+    .accordion-button.active::after {
+      transform: rotate(180deg);
+    }
+
+    .accordion-button.active {
+      background-color: #1c1c1f;
+      color: #ffb400;
+    }
+
+    .accordion-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      background-color: #0c0c0e;
+    }
+
+    .accordion-answer.show {
+      max-height: 500px;
+      padding: 20px;
+    }
+
+    .accordion-answer p {
+      color: #cfccc4;
+      margin: 0;
+    }
+  </style>
+
+  <script>
+    const buttons = document.querySelectorAll('.accordion-button');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', function() {
+        const answer = this.nextElementSibling;
+        const isOpen = answer.classList.contains('show');
+
+        // Close all other answers
+        document.querySelectorAll('.accordion-answer').forEach(item => {
+          item.classList.remove('show');
+        });
+        document.querySelectorAll('.accordion-button').forEach(btn => {
+          btn.classList.remove('active');
+        });
+
+        // Toggle current answer
+        if (!isOpen) {
+          answer.classList.add('show');
+          this.classList.add('active');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

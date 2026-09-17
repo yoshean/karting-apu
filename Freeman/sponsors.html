@@ -4,34 +4,127 @@
     <title>Sponsors & Partners - APU Karting Club</title>
     <link rel="icon" type="image/jpeg" href="../Images/logo.jpg">
     <link rel="stylesheet" href="../main.css">
+    
+    <style>
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .section-subtitle {
+            color: #85888f;
+            margin-bottom: 24px;
+        }
+        .featured-card {
+            background-color: #17171a;
+            border: 1px solid #333;
+            border-left: 5px solid #e2332a;
+            border-radius: 6px;
+            padding: 30px;
+            margin-bottom: 50px;
+        }
+        .featured-card h2 {
+            margin-top: 6px;
+            margin-bottom: 12px;
+            font-size: 24px;
+        }
+        .partner-tag {
+            color: #e2332a;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+        .partner-desc {
+            color: #cfccc4;
+            font-size: 15px;
+            line-height: 1.6;
+            margin-bottom: 16px;
+        }
+        .detail-item {
+            color: #cfccc4;
+            font-size: 14px;
+            margin: 6px 0;
+        }
+        .detail-item b {
+            color: #f2efe8;
+        }
+        .cards-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 16px;
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+        .cards-table td {
+            vertical-align: top;
+            padding: 0;
+        }
+        .card {
+            background-color: #17171a;
+            border: 1px solid #333;
+            border-left: 4px solid #e2332a;
+            border-radius: 6px;
+            padding: 22px;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .card-icon {
+            font-size: 24px;
+            margin: 0 0 8px 0;
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+        .card p {
+            color: #cfccc4;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0 0 6px 0;
+        }
+        .tier-tag {
+            color: #ffb400;
+            font-weight: bold;
+            font-size: 12px;
+            margin: 0 0 6px 0;
+            letter-spacing: 1px;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #85888f;
+            font-size: 14px;
+            border-top: 1px solid #333;
+            margin-top: 60px;
+        }
+    </style>
 </head>
 <body>
 
-<title>APU Karting Club</title>
-<link rel="icon" type="image/jpeg" href="../Images/logo.jpg">
-<link rel="stylesheet" href="../main.css">
- 
-</head>
-<body>
- 
   <!-- NAV -->
   <nav>
     <div class="container">
-      <div class="logo">APU <span>KARTING</span></div>
+      <table>
+        <tr>
+          <td><img src="../Images/logo.jpg" alt="APU Karting Club Logo" width="100"></td>
+          <td id="gaplogotexthome"><a href="../Yoshean/home.html"><div class="logo">APU <span>KARTING</span></div></a></td>
+          <td id="spacejoinusbutton"><a href="../Aavaneesh/membership.html" class="btn">Join Us</a></td>
+        </tr>
+      </table>
       <ul>
-        <li><a href="../Yoshean/home.html">Home</a></li>
-        <li><a href="../Yoshean/about.html">About</a></li>
-        <li><a href="../Yoshean/committee.html">Committee</a></li>
-        <li><a href="../Sameer/calendar.html">Calendar</a></li>
-        <li><a href="../Sameer/gallery.html">Gallery</a></li>
-        <li><a href="../Sameer/news.html">News</a></li>
-        <li><a href="../Freeman/attire.html">Attire</a></li>
-        <li><a href="../Freeman/rules.html">Rules</a></li>
-        <li><a href="../Freeman/sponsors.html">Sponsors</a></li>
-        <li><a href="../Aavaneesh/membership.html">Membership</a></li>
-        <li><a href="../Aavaneesh/faq.html">FAQ</a></li>
-        <li><a href="../Aavaneesh/enquiry.html">Enquiry</a></li>
-        <li><a href="../Yoshean/contact.html">Contact</a></li>
+        <li><a href="../Yoshean/home.html" id="dropdown">Home</a></li>
+        <li><a href="../Yoshean/about.html" id="dropdown">About</a></li>
+        <li><a href="../Yoshean/committee.html" id="dropdown">Committee</a></li>
+        <li><a href="../Sameer/calendar.html" id="dropdown">Calendar</a></li>
+        <li><a href="../Sameer/gallery.html" id="dropdown">Gallery</a></li>
+        <li><a href="../Sameer/news.html" id="dropdown">News</a></li>
+        <li><a href="../Freeman/attire.html" id="dropdown">Attire</a></li>
+        <li><a href="../Freeman/rules.html" id="dropdown">Rules</a></li>
+        <li><a href="../Freeman/sponsors.html" id="dropdown">Sponsors</a></li>
+        <li><a href="../Aavaneesh/membership.html" id="dropdown">Membership</a></li>
+        <li><a href="../Aavaneesh/faq.html" id="dropdown">FAQ</a></li>
+        <li><a href="../Aavaneesh/enquiry.html" id="dropdown">Enquiry</a></li>
+        <li><a href="../Yoshean/contact.html" id="dropdown">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -39,154 +132,102 @@
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
-      <h1>Sponsors & Circuit <span>Partners</span></h1>
+      <h1>Sponsors &amp; Circuit <span>Partners</span></h1>
       <p>Collaborating with industry-leading tracks, motorsport apparel brands, and APU Student Affairs.</p>
     </div>
   </section>
 
-  <!-- Main Content -->
-  <div class="site-main">
+  <!-- MAIN CONTENT -->
+  <main class="container">
 
-        <!-- Official Circuit Host Partner -->
-        <div class="container" style="margin-bottom: 60px;">
-            <div class="session-card" style="border-left: 4px solid #e10600;">
-                <div class="text-red" style="font-size: 13px; font-weight: bold; letter-spacing: 1px;">PRIMARY CIRCUIT PARTNER</div>
-                <h2 class="session-card-title" style="margin-top: 8px;">Aylezo Speedway Circuit</h2>
-                <p class="text-muted" style="margin-bottom: 18px; font-size: 15px;">
-                    Aylezo Speedway is our official home track. Spearheaded by Malaysian race driver Zen Low, Aylezo offers a challenging 11-turn layout, cutting-edge Sodi RT8 270cc rental karts, and computerized MyLaps timing loops.
-                </p>
-                <div class="session-details">
-                    <div class="session-detail-item"><b>Location:</b> Shah Alam, Selangor (35 mins from APU)</div>
-                    <div class="session-detail-item"><b>Member Benefit:</b> 25% discounted booking rates for registered APU Karting members</div>
-                    <div class="session-detail-item"><b>Equipment Provided:</b> High-performance helmets, balaclavas, telemetry timing printouts</div>
-                </div>
-                <a href="../Sameer/calendar.html" class="btn btn-red">View Upcoming Aylezo Sessions</a>
-            </div>
+    <!-- Official Circuit Host Partner -->
+    <section style="margin-top: 40px; margin-bottom: 50px;">
+      <div class="featured-card">
+        <p class="partner-tag">PRIMARY CIRCUIT PARTNER</p>
+        <h2>Aylezo Speedway Circuit</h2>
+        <p class="partner-desc">
+          Aylezo Speedway is our official home track. Spearheaded by Malaysian race driver Zen Low, Aylezo offers a challenging 11-turn layout, cutting-edge Sodi RT8 270cc rental karts, and computerized MyLaps timing loops.
+        </p>
+        <div style="margin-bottom: 20px;">
+          <p class="detail-item"><b>Location:</b> Shah Alam, Selangor (35 mins from APU)</p>
+          <p class="detail-item"><b>Member Benefit:</b> 25% discounted booking rates for registered APU Karting members</p>
+          <p class="detail-item"><b>Equipment Provided:</b> High-performance helmets, balaclavas, telemetry timing printouts</p>
         </div>
+        <a href="../Sameer/calendar.html" class="btn">View Upcoming Aylezo Sessions</a>
+      </div>
+    </section>
 
-        <!-- Supporting Partners (Slide 06 inline-block cards) -->
-        <div class="container" style="margin-bottom: 70px;">
-            <div class="section-header">
-                <h2 class="section-title">Supporting Partners</h2>
-                <p class="section-subtitle">Valued supporters contributing equipment, event backing, and student perks.</p>
+    <!-- Supporting Partners -->
+    <section style="margin-bottom: 50px;">
+      <h2 class="section-title">Supporting Partners</h2>
+      <p class="section-subtitle">Valued supporters contributing equipment, event backing, and student perks.</p>
+
+      <table class="cards-table">
+        <tr>
+          <td width="33%">
+            <div class="card">
+              <p class="card-icon">🏎️</p>
+              <h3>Pinnacle Kart</h3>
+              <p>Subang Jaya's premier technical karting facility. Official partner for club technical clinics, chassis geometry seminars, and driver coaching modules.</p>
             </div>
-
-            <div>
-                <div class="col-third card">
-                    <div class="text-red" style="font-size: 24px; margin-bottom: 6px;">🏎️</div>
-                    <h3 class="card-title">Pinnacle Kart</h3>
-                    <p class="text-muted">Subang Jaya's premier technical karting facility. Official partner for club technical clinics, chassis geometry seminars, and driver coaching modules.</p>
-                </div>
-
-                <div class="col-third card">
-                    <div class="text-red" style="font-size: 24px; margin-bottom: 6px;">⚡</div>
-                    <h3 class="card-title">Red Bull Malaysia</h3>
-                    <p class="text-muted">Student Community Partner fueling our end-of-term championship rounds with podium celebrations, cold refreshments, and official merchandise prizes.</p>
-                </div>
-
-                <div class="col-third-last card">
-                    <div class="text-red" style="font-size: 24px; margin-bottom: 6px;">🎓</div>
-                    <h3 class="card-title">APU Student Affairs</h3>
-                    <p class="text-muted">Our university governing body providing sports club grants, transport shuttle coordination from campus, and insurance coverage during sanctioned club runs.</p>
-                </div>
-                <div class="clear"></div>
+          </td>
+          <td width="33%">
+            <div class="card">
+              <p class="card-icon">⚡</p>
+              <h3>Red Bull Malaysia</h3>
+              <p>Student Community Partner fueling our end-of-term championship rounds with podium celebrations, cold refreshments, and official merchandise prizes.</p>
             </div>
-        </div>
-
-        <!-- Sponsorship Tiers Section -->
-        <div class="container" style="margin-bottom: 70px;">
-            <div class="section-header">
-                <h2 class="section-title">Partner With Us</h2>
-                <p class="section-subtitle">Reach hundreds of tech and engineering students passionate about motorsport and automotive innovation.</p>
+          </td>
+          <td width="33%">
+            <div class="card">
+              <p class="card-icon">🎓</p>
+              <h3>APU Student Affairs</h3>
+              <p>Our university governing body providing sports club grants, transport shuttle coordination from campus, and insurance coverage during sanctioned club runs.</p>
             </div>
+          </td>
+        </tr>
+      </table>
+    </section>
 
-            <div>
-                <div class="col-half card">
-                    <div class="text-amber" style="font-weight: bold; font-size: 13px;">TIER 1</div>
-                    <h3 class="card-title" style="margin-top: 6px;">Season Title Sponsor</h3>
-                    <p class="text-muted" style="margin-bottom: 6px;">• Prominent branding on club jerseys and media recaps</p>
-                    <p class="text-muted" style="margin-bottom: 6px;">• Dedicated race named in honor of your organization</p>
-                    <p class="text-muted">• Direct recruitment and tech exhibition access at APU campus</p>
-                </div>
+    <!-- Sponsorship Tiers Section -->
+    <section style="margin-bottom: 60px;">
+      <h2 class="section-title">Partner With Us</h2>
+      <p class="section-subtitle">Reach hundreds of tech and engineering students passionate about motorsport and automotive innovation.</p>
 
-                <div class="col-half-last card">
-                    <div class="text-amber" style="font-weight: bold; font-size: 13px;">TIER 2</div>
-                    <h3 class="card-title" style="margin-top: 6px;">Gear & Trophy Partner</h3>
-                    <p class="text-muted" style="margin-bottom: 6px;">• Logo placement on club website, social media, and flyers</p>
-                    <p class="text-muted" style="margin-bottom: 6px;">• Co-branding on podium trophies and certificates</p>
-                    <p class="text-muted">• VIP access to race sessions and hospitality area</p>
-                </div>
-                <div class="clear"></div>
+      <table class="cards-table">
+        <tr>
+          <td width="50%">
+            <div class="card">
+              <p class="tier-tag">TIER 1</p>
+              <h3>Season Title Sponsor</h3>
+              <p>&bull; Prominent branding on club jerseys and media recaps</p>
+              <p>&bull; Dedicated race named in honor of your organization</p>
+              <p>&bull; Direct recruitment and tech exhibition access at APU campus</p>
             </div>
-
-            <div class="text-center" style="margin-top: 30px;">
-                <a href="../Aavaneesh/enquiry.html" class="btn btn-red">Inquire for Sponsorship Packages</a>
+          </td>
+          <td width="50%">
+            <div class="card">
+              <p class="tier-tag">TIER 2</p>
+              <h3>Gear &amp; Trophy Partner</h3>
+              <p>&bull; Logo placement on club website, social media, and flyers</p>
+              <p>&bull; Co-branding on podium trophies and certificates</p>
+              <p>&bull; VIP access to race sessions and hospitality area</p>
             </div>
-        </div>
-    </div>
+          </td>
+        </tr>
+      </table>
 
-    <!-- Site Footer -->
-    <div class="site-footer">
-        <div class="container">
-            <div>
-                <div class="footer-col-brand">
-                    <div class="brand-logo" style="float: none; margin-bottom: 12px;">
-                        <img src="../Images/logo.jpg" alt="Logo" onerror="this.style.display='none'">
-                        APU <span>KARTING</span>
-                    </div>
-                    <p class="text-muted" style="margin-bottom: 10px;">The official student motorsport and karting club of Asia Pacific University of Technology & Innovation (APU).</p>
-                    <p style="color: #6b7280; font-size: 13px;">Assignment Page 7: Freeman - Sponsors</p>
-                </div>
+      <div style="text-align: center; margin-top: 25px;">
+        <a href="../Aavaneesh/enquiry.html" class="btn">Inquire for Sponsorship Packages</a>
+      </div>
+    </section>
 
-                <div class="footer-col">
-                    <div class="footer-title">About & Team</div>
-                    <div class="footer-links">
-                        <a href="../Yoshean/about.html">Mission & Vision</a>
-                        <a href="../Yoshean/committee.html">Committee</a>
-                        <a href="../Yoshean/contact.html">Contact Us</a>
-                    </div>
-                </div>
+  </main>
 
-                <div class="footer-col">
-                    <div class="footer-title">Racing & Media</div>
-                    <div class="footer-links">
-                        <a href="rules.html">Rules & Flags</a>
-                        <a href="attire.html">Attire & Gear</a>
-                        <a href="sponsors.html">Sponsors</a>
-                        <a href="../Sameer/calendar.html">Race Calendar</a>
-                        <a href="../Sameer/gallery.html">Photo Gallery</a>
-                        <a href="../Sameer/news.html">News & Reports</a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <div class="footer-title">Membership</div>
-                    <div class="footer-links">
-                        <a href="../Aavaneesh/membership.html">Register / Join Grid</a>
-                        <a href="../Aavaneesh/enquiry.html">General Enquiry</a>
-                        <a href="../Aavaneesh/feedback.html">Give Feedback</a>
-                        <a href="../Aavaneesh/faq.html">FAQs</a>
-                    </div>
-                </div>
-
-                <div class="clear"></div>
-            </div>
-
-            <div class="footer-bottom">
-                <div style="float: left;">&copy; 2026 APU Karting Club. Built for APU students.</div>
-                <div style="float: right;">Pure HTML, CSS & JavaScript adhering to lecture slides.</div>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 APU Karting Club. Built for APU students.</p>
+  </footer>
 
 </body>
 </html>
- 
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <div class="container">
-      <h1>Our <span>Sponsors</span></h1>
-      <p>Everything you need to know before your first session.</p>
-    </div>
-  </section>

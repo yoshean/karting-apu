@@ -4,34 +4,107 @@
     <title>Attire & Equipment - APU Karting Club</title>
     <link rel="icon" type="image/jpeg" href="../Images/logo.jpg">
     <link rel="stylesheet" href="../main.css">
+    
+    <style>
+        .section-title {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .section-subtitle {
+            color: #85888f;
+            margin-bottom: 24px;
+        }
+        .cards-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 16px;
+            margin-left: -16px;
+            margin-right: -16px;
+        }
+        .cards-table td {
+            vertical-align: top;
+            padding: 0;
+        }
+        .card {
+            background-color: #17171a;
+            border: 1px solid #333;
+            border-left: 4px solid #e2332a;
+            border-radius: 6px;
+            padding: 20px;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        .card-icon {
+            font-size: 24px;
+            margin: 0 0 8px 0;
+        }
+        .card h3 {
+            margin: 0 0 10px 0;
+            font-size: 18px;
+        }
+        .card p {
+            color: #cfccc4;
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+        }
+        .racing-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #17171a;
+            border: 1px solid #333;
+            border-radius: 6px;
+        }
+        .racing-table th, .racing-table td {
+            padding: 14px 18px;
+            border: 1px solid #333;
+            text-align: left;
+            font-size: 14px;
+        }
+        .racing-table th {
+            background-color: #1c1c1f;
+            color: #f2efe8;
+            font-size: 15px;
+        }
+        .racing-table td {
+            color: #cfccc4;
+        }
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #85888f;
+            font-size: 14px;
+            border-top: 1px solid #333;
+            margin-top: 60px;
+        }
+    </style>
 </head>
 <body>
 
-<title>APU Karting Club</title>
-<link rel="icon" type="image/jpeg" href="../Images/logo.jpg">
-<link rel="stylesheet" href="../main.css">
- 
-</head>
-<body>
- 
   <!-- NAV -->
   <nav>
     <div class="container">
-      <div class="logo">APU <span>KARTING</span></div>
+      <table>
+        <tr>
+          <td><img src="../Images/logo.jpg" alt="APU Karting Club Logo" width="100"></td>
+          <td id="gaplogotexthome"><a href="../Yoshean/home.html"><div class="logo">APU <span>KARTING</span></div></a></td>
+          <td id="spacejoinusbutton"><a href="../Aavaneesh/membership.html" class="btn">Join Us</a></td>
+        </tr>
+      </table>
       <ul>
-        <li><a href="../Yoshean/home.html">Home</a></li>
-        <li><a href="../Yoshean/about.html">About</a></li>
-        <li><a href="../Yoshean/committee.html">Committee</a></li>
-        <li><a href="../Sameer/calendar.html">Calendar</a></li>
-        <li><a href="../Sameer/gallery.html">Gallery</a></li>
-        <li><a href="../Sameer/news.html">News</a></li>
-        <li><a href="../Freeman/attire.html">Attire</a></li>
-        <li><a href="../Freeman/rules.html">Rules</a></li>
-        <li><a href="../Freeman/sponsors.html">Sponsors</a></li>
-        <li><a href="../Aavaneesh/membership.html">Membership</a></li>
-        <li><a href="../Aavaneesh/faq.html">FAQ</a></li>
-        <li><a href="../Aavaneesh/enquiry.html">Enquiry</a></li>
-        <li><a href="../Yoshean/contact.html">Contact</a></li>
+        <li><a href="../Yoshean/home.html" id="dropdown">Home</a></li>
+        <li><a href="../Yoshean/about.html" id="dropdown">About</a></li>
+        <li><a href="../Yoshean/committee.html" id="dropdown">Committee</a></li>
+        <li><a href="../Sameer/calendar.html" id="dropdown">Calendar</a></li>
+        <li><a href="../Sameer/gallery.html" id="dropdown">Gallery</a></li>
+        <li><a href="../Sameer/news.html" id="dropdown">News</a></li>
+        <li><a href="../Freeman/attire.html" id="dropdown">Attire</a></li>
+        <li><a href="../Freeman/rules.html" id="dropdown">Rules</a></li>
+        <li><a href="../Freeman/sponsors.html" id="dropdown">Sponsors</a></li>
+        <li><a href="../Aavaneesh/membership.html" id="dropdown">Membership</a></li>
+        <li><a href="../Aavaneesh/faq.html" id="dropdown">FAQ</a></li>
+        <li><a href="../Aavaneesh/enquiry.html" id="dropdown">Enquiry</a></li>
+        <li><a href="../Yoshean/contact.html" id="dropdown">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -39,166 +112,108 @@
   <!-- PAGE HEADER -->
   <section class="page-header">
     <div class="container">
-      <h1>Attire & <span>Equipment</span></h1>
+      <h1>Attire &amp; <span>Equipment</span></h1>
       <p>Mandatory driver protective gear, racing apparel standards, and prohibited clothing.</p>
     </div>
   </section>
 
-  <!-- Main Content -->
-  <div class="site-main">
+  <!-- MAIN CONTENT -->
+  <main class="container">
 
-        <!-- Mandatory Gear Cards (Slide 06 inline-block cards) -->
-        <div class="container" style="margin-bottom: 60px;">
-            <div class="section-header">
-                <h2 class="section-title">Mandatory Safety Essentials</h2>
-                <p class="section-subtitle">Every driver must meet these criteria before entering the pit lane.</p>
+    <!-- Mandatory Safety Essentials -->
+    <section style="margin-top: 40px; margin-bottom: 60px;">
+      <h2 class="section-title">Mandatory Safety Essentials</h2>
+      <p class="section-subtitle">Every driver must meet these criteria before entering the pit lane.</p>
+
+      <table class="cards-table">
+        <tr>
+          <td width="33%">
+            <div class="card">
+              <p class="card-icon">🪖</p>
+              <h3>Full-Face Helmet</h3>
+              <p>DOT or Snell certified helmet with operational clear visor. The visor must be completely closed while on track. Helmets are provided free on-site or you may bring your own.</p>
             </div>
-
-            <!-- Row 1 -->
-            <div style="margin-bottom: 20px;">
-                <div class="col-third card">
-                    <div class="text-red" style="font-size: 24px; margin-bottom: 6px;">🪖</div>
-                    <h3 class="card-title">Full-Face Helmet</h3>
-                    <p class="text-muted">DOT or Snell certified helmet with operational clear visor. The visor must be completely closed while on track. Helmets are provided free on-site or you may bring your own.</p>
-                </div>
-
-                <div class="col-third card">
-                    <div class="text-red" style="font-size: 24px; margin-bottom: 6px;">👟</div>
-                    <h3 class="card-title">Closed-Toe Flat Shoes</h3>
-                    <p class="text-muted">Sneakers, sports trainers, or racing boots with thin flat rubber soles for pedal tactile feedback. Sandals, Crocs, slippers, or open footwear are strictly prohibited.</p>
-                </div>
-
-                <div class="col-third-last card">
-                    <div class="text-red" style="font-size: 24px; margin-bottom: 6px;">👖</div>
-                    <h3 class="card-title">Full-Length Pants</h3>
-                    <p class="text-muted">Comfortable jeans or heavy track pants. Because kart engines and radiators sit inches away from your hips, shorts are strictly forbidden on the circuit.</p>
-                </div>
-                <div class="clear"></div>
+          </td>
+          <td width="33%">
+            <div class="card">
+              <p class="card-icon">👟</p>
+              <h3>Closed-Toe Flat Shoes</h3>
+              <p>Sneakers, sports trainers, or racing boots with thin flat rubber soles for pedal tactile feedback. Sandals, Crocs, slippers, or open footwear are strictly prohibited.</p>
             </div>
-
-            <!-- Row 2 -->
-            <div>
-                <div class="col-third card">
-                    <div class="text-red" style="font-size: 24px; margin-bottom: 6px;">🧣</div>
-                    <h3 class="card-title">Balaclava (Head Sock)</h3>
-                    <p class="text-muted">Required under all circuit rental helmets for sweat absorption and hygiene. Balaclavas are distributed to club members or available at track registration for RM 5.</p>
-                </div>
-
-                <div class="col-third card">
-                    <div class="text-red" style="font-size: 24px; margin-bottom: 6px;">🥊</div>
-                    <h3 class="card-title">Racing Gloves</h3>
-                    <p class="text-muted">Gripped tactical or karting gloves reduce vibration fatigue over 15-minute heats and protect knuckles during high-G cornering. Strongly recommended for racing.</p>
-                </div>
-
-                <div class="col-third-last card">
-                    <div class="text-red" style="font-size: 24px; margin-bottom: 6px;">🛡️</div>
-                    <h3 class="card-title">Rib Protector Vest</h3>
-                    <p class="text-muted">Kart bucket seats experience up to 2.5G lateral cornering loads. Rib protectors absorb impact against the fiberglass seat shell and are provided on-site upon request.</p>
-                </div>
-                <div class="clear"></div>
+          </td>
+          <td width="33%">
+            <div class="card">
+              <p class="card-icon">👖</p>
+              <h3>Full-Length Pants</h3>
+              <p>Comfortable jeans or heavy track pants. Because kart engines and radiators sit inches away from your hips, shorts are strictly forbidden on the circuit.</p>
             </div>
-        </div>
-
-        <!-- Do's and Don'ts Table (Slide 04 Table <table>) -->
-        <div class="container" style="margin-bottom: 70px;">
-            <div class="section-header">
-                <h2 class="section-title">Paddock Dress Code: Do's & Don'ts</h2>
-                <p class="section-subtitle">A quick reference to avoid being turned away at track scrutineering.</p>
+          </td>
+        </tr>
+        <tr>
+          <td width="33%">
+            <div class="card">
+              <p class="card-icon">🧣</p>
+              <h3>Balaclava (Head Sock)</h3>
+              <p>Required under all circuit rental helmets for sweat absorption and hygiene. Balaclavas are distributed to club members or available at track registration for RM 5.</p>
             </div>
-
-            <div class="table-box">
-                <table class="racing-table">
-                    <tr>
-                        <th style="width: 50%;">✅ Permitted & Recommended</th>
-                        <th style="width: 50%;">❌ Strictly Prohibited</th>
-                    </tr>
-                    <tr>
-                        <td>Fitted t-shirts, athletic long-sleeve jerseys, or racing overalls</td>
-                        <td>Loose scarves, neck ties, or fluttering shawls (hazard near axle)</td>
-                    </tr>
-                    <tr>
-                        <td>Long hair neatly tied, braided, and tucked firmly inside jacket</td>
-                        <td>Untied long flowing hair extending past the helmet collar</td>
-                    </tr>
-                    <tr>
-                        <td>Tightly laced sneakers, trainers, or flat driving shoes</td>
-                        <td>Crocs in sport mode, flip flops, high heels, or canvas slip-ons</td>
-                    </tr>
-                    <tr>
-                        <td>Secured eyeglasses or contact lenses with helmet eye-port clearance</td>
-                        <td>Loose hanging jewelry, long necklaces, or dangling keychains</td>
-                    </tr>
-                    <tr>
-                        <td>Personal FIA/CIK-FIA approved racing suit, gloves, and boots</td>
-                        <td>Short pants, three-quarter capris, or skirts/dresses on track</td>
-                    </tr>
-                </table>
+          </td>
+          <td width="33%">
+            <div class="card">
+              <p class="card-icon">🥊</p>
+              <h3>Racing Gloves</h3>
+              <p>Gripped tactical or karting gloves reduce vibration fatigue over 15-minute heats and protect knuckles during high-G cornering. Strongly recommended for racing.</p>
             </div>
-        </div>
-    </div>
-
-    <!-- Site Footer -->
-    <div class="site-footer">
-        <div class="container">
-            <div>
-                <div class="footer-col-brand">
-                    <div class="brand-logo" style="float: none; margin-bottom: 12px;">
-                        <img src="../Images/logo.jpg" alt="Logo" onerror="this.style.display='none'">
-                        APU <span>KARTING</span>
-                    </div>
-                    <p class="text-muted" style="margin-bottom: 10px;">The official student motorsport and karting club of Asia Pacific University of Technology & Innovation (APU).</p>
-                    <p style="color: #6b7280; font-size: 13px;">Assignment Page 6: Freeman - Attire & Equipment</p>
-                </div>
-
-                <div class="footer-col">
-                    <div class="footer-title">About & Team</div>
-                    <div class="footer-links">
-                        <a href="../Yoshean/about.html">Mission & Vision</a>
-                        <a href="../Yoshean/committee.html">Committee</a>
-                        <a href="../Yoshean/contact.html">Contact Us</a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <div class="footer-title">Racing & Media</div>
-                    <div class="footer-links">
-                        <a href="rules.html">Rules & Flags</a>
-                        <a href="attire.html">Attire & Gear</a>
-                        <a href="sponsors.html">Sponsors</a>
-                        <a href="../Sameer/calendar.html">Race Calendar</a>
-                        <a href="../Sameer/gallery.html">Photo Gallery</a>
-                        <a href="../Sameer/news.html">News & Reports</a>
-                    </div>
-                </div>
-
-                <div class="footer-col">
-                    <div class="footer-title">Membership</div>
-                    <div class="footer-links">
-                        <a href="../Aavaneesh/membership.html">Register / Join Grid</a>
-                        <a href="../Aavaneesh/enquiry.html">General Enquiry</a>
-                        <a href="../Aavaneesh/feedback.html">Give Feedback</a>
-                        <a href="../Aavaneesh/faq.html">FAQs</a>
-                    </div>
-                </div>
-
-                <div class="clear"></div>
+          </td>
+          <td width="33%">
+            <div class="card">
+              <p class="card-icon">🛡️</p>
+              <h3>Rib Protector Vest</h3>
+              <p>Kart bucket seats experience up to 2.5G lateral cornering loads. Rib protectors absorb impact against the fiberglass seat shell and are provided on-site upon request.</p>
             </div>
+          </td>
+        </tr>
+      </table>
+    </section>
 
-            <div class="footer-bottom">
-                <div style="float: left;">&copy; 2026 APU Karting Club. Built for APU students.</div>
-                <div style="float: right;">Pure HTML, CSS & JavaScript adhering to lecture slides.</div>
-                <div class="clear"></div>
-            </div>
-        </div>
-    </div>
+    <!-- Do's and Don'ts Table -->
+    <section style="margin-bottom: 60px;">
+      <h2 class="section-title">Paddock Dress Code: Do's &amp; Don'ts</h2>
+      <p class="section-subtitle">A quick reference to avoid being turned away at track scrutineering.</p>
+
+      <table class="racing-table">
+        <tr>
+          <th width="50%">✅ Permitted &amp; Recommended</th>
+          <th width="50%">❌ Strictly Prohibited</th>
+        </tr>
+        <tr>
+          <td>Fitted t-shirts, athletic long-sleeve jerseys, or racing overalls</td>
+          <td>Loose scarves, neck ties, or fluttering shawls (hazard near axle)</td>
+        </tr>
+        <tr>
+          <td>Long hair neatly tied, braided, and tucked firmly inside jacket</td>
+          <td>Untied long flowing hair extending past the helmet collar</td>
+        </tr>
+        <tr>
+          <td>Tightly laced sneakers, trainers, or flat driving shoes</td>
+          <td>Crocs in sport mode, flip flops, high heels, or canvas slip-ons</td>
+        </tr>
+        <tr>
+          <td>Secured eyeglasses or contact lenses with helmet eye-port clearance</td>
+          <td>Loose hanging jewelry, long necklaces, or dangling keychains</td>
+        </tr>
+        <tr>
+          <td>Personal FIA/CIK-FIA approved racing suit, gloves, and boots</td>
+          <td>Short pants, three-quarter capris, or skirts/dresses on track</td>
+        </tr>
+      </table>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 APU Karting Club. Built for APU students.</p>
+  </footer>
 
 </body>
 </html>
- 
-  <!-- PAGE HEADER -->
-  <section class="page-header">
-    <div class="container">
-      <h1>Attire <span>Requirements</span></h1>
-      <p>Everything you need to know before your first session.</p>
-    </div>
-  </section>
