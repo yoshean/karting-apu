@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>APU Karting Club</title>
+<title>APU Karting Club: Enquiry</title>
 <link rel="icon" type="image/jpeg" href="../Images/logo.jpg">
 <link rel="stylesheet" href="../main.css">
- 
 </head>
+
 <body>
  
   <!-- NAV -->
@@ -46,24 +46,31 @@
   <main>
    hey please fill this form in here to make an enquiry about APU GO Krting Club.<br>
 
-    <h1>Form Register</h1>
+    <h1>Enquiry Page</h1>
    
     <form>
-   <label for="name">name:</label><br>
+   <label for="name">Your Name:</label><br>
    <input type="text" id="name" placeholder="Benjamin Kirby Tennyson" minlength="9" maxlength="15" value size="30" style="wide"><br><p></p>
 
 
-   <label for="TP">TP:</label><br>
+   <label for="TP">Your TP Number:</label><br>
    <input type="text" id="TP" placeholder="TP1776890" minlength="9" maxlength="15" value size="30" style="wide"><br><p></p>
 
-   <label for="give us your messege">give us your messege:</label><br>
-   <textarea></textarea><br>
+   <label for="message">Enter your enquiry:</label><br>
+   <textarea id="message" placeholder="Enter your enquiry:"></textarea><br>
 
    <input type="reset"><br>
    <input type="submit">
    </form>
          
-   
+   <style>
+    #message{
+      width: 800px;
+      height: 150px;
+      resize: none;
+      box-sizing: border-box;
+    }
+   </style>
     
 
 
