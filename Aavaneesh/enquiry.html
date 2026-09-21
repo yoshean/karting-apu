@@ -64,9 +64,9 @@
 
     <h1>Enquiry Page</h1>
    
-    <form>
+  <form onsubmit="alert('Thank you for your submission!'); return false;">
    <label for="Your name">Your name:</label><br>
-   <input type="text" id="name" placeholder="Benjamin Kirby Tennyson" minlength="9" maxlength="15" value size="30" style="wide"><br><p></p>
+   <input type="text" id="name" placeholder="Benjamin Kirby Tennyson" minlength="8" maxlength="15" value size="30" style="wide"><br><p></p>
 
 
    <label for="YourTP">Your TP:</label><br>
@@ -79,7 +79,6 @@
    <input type="submit">
    </form>
 
-   <script>alert("Thank you for your submission!")</script>
    
          
    <style>
@@ -89,6 +88,9 @@
       resize: none;
       box-sizing: border-box;
     }
+
+ 
+
    </style>
     
 
