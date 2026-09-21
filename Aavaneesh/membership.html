@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>APU Karting Club</title>
+<title>APU Karting Club: Membership</title>
 <link rel="icon" type="image/jpeg" href="../Images/logo.jpg">
 <link rel="stylesheet" href="../main.css">
  
@@ -18,20 +18,36 @@
           <td id="spacejoinusbutton"><a href="../Aavaneesh/membership.html" class="btn">Join Us</a></td>
         </tr>
       </table>
-      <ul>
-        <li><a href="../Yoshean/home.html" id="dropdown">Home</a></li>
-        <li><a href="../Yoshean/about.html" id="dropdown">About</a></li>
-        <li><a href="../Yoshean/committee.html" id="dropdown">Committee</a></li>
-        <li><a href="../Sameer/calendar.html" id="dropdown">Calendar</a></li>
-        <li><a href="../Sameer/gallery.html" id="dropdown">Gallery</a></li>
-        <li><a href="../Sameer/news.html" id="dropdown">News</a></li>
-        <li><a href="../Freeman/attire.html" id="dropdown">Attire</a></li>
-        <li><a href="../Freeman/rules.html" id="dropdown">Rules</a></li>
-        <li><a href="../Freeman/sponsors.html" id="dropdown">Sponsors</a></li>
-        <li><a href="../Aavaneesh/membership.html" id="dropdown">Membership</a></li>
-        <li><a href="../Aavaneesh/faq.html" id="dropdown">FAQ</a></li>
-        <li><a href="../Aavaneesh/enquiry.html" id="dropdown">Enquiry</a></li>
-        <li><a href="../Yoshean/contact.html" id="dropdown">Contact</a></li>
+      <ul id="dropdown-flex">
+        <li><a href="../Yoshean/home.html">Home</a></li>
+        <li id="dropdown"><a href="#">About Us</a>
+          <ul id="fixed">
+            <li id="content"><a href="../Yoshean/about.html">About</a></li>
+            <li id="content"><a href="../Yoshean/committee.html">Committee</a></li>
+            <li id="content"><a href="../Yoshean/contact.html">Contact</a></li>
+          </ul>
+        </li>
+        <li id="dropdown"><a href="#">Rules and Regulations</a>
+          <ul id="fixed">
+            <li id="content"><a href="../Freeman/attire.html">Attire</a></li>
+            <li id="content"><a href="../Freeman/rules.html">Rules</a></li>
+            <li id="content"><a href="../Freeman/sponsors.html">Sponsors</a></li>
+            <li id="content"><a href="../Aavaneesh/faq.html">FAQ</a></li>
+          </ul>
+        </li>
+        <li id="dropdown"><a href="#">News and Media</a>
+          <ul id="fixed">
+            <li id="content"><a href="../Sameer/calendar.html">Calendar</a></li>
+            <li id="content"><a href="../Sameer/gallery.html">Gallery</a></li>
+            <li id="content"><a href="../Sameer/news.html">News</a></li>
+          </ul>
+        </li>
+        <li id="dropdown"><a href="#">Forms</a>
+          <ul id="fixed">
+            <li id="content"><a href="../Aavaneesh/membership.html">Membership</a></li>
+            <li id="content"><a href="../Aavaneesh/enquiry.html">Enquiry</a></li>
+          </ul>
+        </li>
       </ul>
     </div>
   </nav>
@@ -44,25 +60,45 @@
     </div>
   </section>
   <main>
-   Hey, this is a membership page for you to register yourself as a member in APU Go Karting Club.Please fill this form in in here.
+    <h1>Membership Form</h1>
+   Hey, this is a membership page for you to register yourself as a member in APU Go Karting Club.<br>
+   Please fill this form in in here.<br><br>
 
    
    <form>
-   <label for="Your name">Your name:</label><br>
-   <input type="text" id="Your name" placeholder="Benjamin Kirby Tennyson" minlength="9" maxlength="15" value size="30" style="wide"><br><p></p>
 
+   <label for="name">Your Name:</label><br>
+   <input type="text" id="name" placeholder="Benjamin Kirby Tennyson" minlength="9" maxlength="15" value size="30" style="wide"><br><p></p>
 
-   <label for="TP">TP:</label><br>
+   <label for="TP">Your TP Number:</label><br>
    <input type="text" id="TP" placeholder="TP1776890" minlength="9" maxlength="15" value size="30" style="wide"><br><p></p>
+   
+   <label>Do you have any previous karting experience?</label><br>
+   <input type="radio" id="yes" name="experience" value="yes">
+   <label for="yes">Yes</label><br>
+   
+   <input type="radio" id="no" name="experience" value="no">
+   <label for="no">No</label><br><br>
 
-   <label for="Date of Birth">Date of Birth:</label><br>
-   <input type="text" id="TP" placeholder="0/0/9" minlength="9" maxlength="15" value size="30" style="wide"><br><p>
-
-
-
-   <input type="reset"><br>
+   
+   
+   <input type="reset">
    <input type="submit">
    </form>
   </main>
   
-  <html>
+
+<style>
+input[type="radio"]{
+  accent-color: red;
+}
+</style>
+
+  <footer>
+    <p>&copy; 2026 APU Karting Club. Built for APU students.</p>
+  </footer>
+
+</body>
+</html>
+
+
