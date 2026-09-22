@@ -150,7 +150,7 @@ footer {
   margin-left: 10px;
 }
 
-#red{
+#red-stats-number{
   font-size: 80px;
   margin-left: 200px;
   color: #e2332a;
@@ -158,7 +158,7 @@ footer {
   text-align: center;
 }
 
-#white{
+#white-stats-description{
   font-size: 20px;
   margin-left: 200px;
   text-align: center;
@@ -169,7 +169,7 @@ footer {
 
 
 
-#dropdown{
+.dropdown{
     position: relative;
 }
 
@@ -184,15 +184,15 @@ footer {
   margin-right: 80px;
 }
 
-#content{
+.content{
     margin-top: 20px;
 }
 
-#fixed li:hover{
+.fixed li:hover{
   background-color: #e2332a;
 }
 
-#fixed {
+.fixed {
   position: absolute;
   display: none;
   left: 50%;
@@ -203,7 +203,7 @@ footer {
   text-align: center;
 }
 
-#dropdown:hover #fixed{
+.dropdown:hover .fixed{
     display: block;
     list-style: none;
     background-color: #17171a;
