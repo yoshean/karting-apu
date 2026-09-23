@@ -55,19 +55,11 @@
  
 
 
-
-
-
-
-
-
-
-
-
-
-
-  <!-- SCROLL BAR -->
-  <section class="page-header">
+<div class="carousel-container">
+ <button class="arrow-btn left-btn" id="prevBtn" aria-label="Previous"><img src="../Images/left-image.jpg" width="10px"></button>
+  <button class="arrow-btn right-btn" id="nextBtn" aria-label="Next"><img src="../Images/right-image.jpg" width="10px"></button>
+  <div class="carousel-track" id="carouselTrack">
+    <div class="carousel-item">  <section class="page-header">
     <div class="container">
       <table>
         <tr>
@@ -76,49 +68,13 @@
             <p>Student-run karting at APU, real seat time, real circuits, no experience required.</p>
             <br>
             <a href="../Yoshean/committee.html" class="btn">Meet the Crew</a>
-            <a href="../Aavaneesh/membership.html" class="btn">Join Us</a>
           </td>
           <td id="gapimagehome"><img src="../Images/friends.png" height="300"></td>
         </tr>
       </table>
     </div>
-  </section>
-  <main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="section">
-    <table>
-      <tr>
-        <td><div id="red-stats-number">80+</div><div id="white-stats-description">members</div></td>
-        <td><div id="red-stats-number">10+</div><div id="white-stats-description">events</div></td>
-        <td><div id="red-stats-number">5+</div><div id="white-stats-description">tracks</div></td>
-      </tr>
-    </table>
-  </div>
-
-<section class="page-header">
+  </section></div>
+    <div class="carousel-item"><section class="page-header">
   <div class="container">
     <table>
       <tr>
@@ -147,13 +103,35 @@
             <h1>This could be <span>YOU!</span></h1>
             <p>New to karting? We got you covered!</p>
             <br>
-            <a href="../Freeman/rules.html" class="btn" id="findmore">Rules and Regulations</a>
-            <a href="../Freeman/attire.html" class="btn">Attire Requirements</a>
+            <a href="../Aavaneesh/membership.html" class="btn">Join Us</a>
         </td>
         </tr>
     </table>
   </div>
-</section>
+</section></div>
+    <div class="carousel-item">Item 3</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="section">
+    <table>
+      <tr id="p">
+        <td><div id="red-stats-number">80+</div><div id="white-stats-description">members</div></td>
+        <td><div id="red-stats-number">10+</div><div id="white-stats-description">events</div></td>
+        <td><div id="red-stats-number">5+</div><div id="white-stats-description">tracks</div></td>
+      </tr>
+    </table>
+  </div>
+
+
 </main>
 
 <style>
@@ -185,8 +163,38 @@
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome/Safari/Edge */
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
 </style>
 
   <footer>
     <p>&copy; 2026 APU Karting Club. Built for APU students.</p>
   </footer>
+
+
+
+
+
+<script>
+const track = document.getElementById('carouselTrack');
+
+document.getElementById('nextBtn').onclick = () => track.scrollLeft += track.clientWidth;
+document.getElementById('prevBtn').onclick = () => track.scrollLeft -= track.clientWidth;
+</script>
