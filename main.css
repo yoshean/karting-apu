@@ -2,13 +2,12 @@
   body {
     background-color: #0c0c0e;
     color: #f2efe8;
-    font-family: Arial, sans-serif;
+    font-family: 'Titillium';
     margin: 0;
     line-height: 1.5;
   }
  
   h1, h2, h3 {
-    font-family: Arial, sans-serif;
     color: #f2efe8;
   }
  
@@ -31,20 +30,20 @@ footer {
   border-top: 1px solid #333;
   margin-top: 60px;
 }
- 
 
+@font-face {
+    font-family: 'Orbitron';
+    src: url('fonts/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 900;
+    font-style: normal;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@font-face {
+    font-family: 'Titillium';
+    src: url('fonts/Titillium/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: 400 900;
+    font-style: normal;
+}
 
 
 
@@ -55,7 +54,7 @@ footer {
   /* ===== NAVIGATION BAR ===== */
   nav {
     background-color: #17171a;
-    padding: 15px 0;
+    padding: 0px 0px;
   }
  
   nav .container {
@@ -69,6 +68,7 @@ footer {
   .logo {
     font-size: 42px;
     font-weight: bold;
+    font-family: 'Orbitron';
   }
  
   .logo span {
@@ -80,13 +80,14 @@ footer {
   /* ===== PAGE HEADER ===== */
   .page-header {
     text-align: center;
-    padding: 60px 20px;
+    padding: 30px 20px;
     border-bottom: 1px solid #333;
   }
  
   .page-header h1 {
     font-size: 40px;
     margin-bottom: 10px;
+    font-family: 'Orbitron';
   }
  
   .page-header h1 span {
@@ -126,7 +127,7 @@ footer {
 }
 
 #spacejoinusbutton{
-  padding-left: 450px;
+  padding-left: 300px;
 }
 
 .btn {
@@ -136,6 +137,7 @@ footer {
   padding: 12px 24px;
   border-radius: 4px;
   font-weight: bold;
+  font-family: 'Orbitron';
 }
 
 .btn:hover{
@@ -150,17 +152,17 @@ footer {
   margin-left: 10px;
 }
 
-#red{
+#red-stats-number{
   font-size: 80px;
-  margin-left: 200px;
+  margin-left: 150px;
   color: #e2332a;
   font-weight: bold;
   text-align: center;
 }
 
-#white{
+#white-stats-description{
   font-size: 20px;
-  margin-left: 200px;
+  margin-left: 150px;
   text-align: center;
 }
 
@@ -169,7 +171,7 @@ footer {
 
 
 
-#dropdown{
+.dropdown{
     position: relative;
 }
 
@@ -178,21 +180,23 @@ footer {
   display: flex;
   margin-top: -10px;
   text-align: center;
+  font-family: 'Orbitron';
 }
 
 #dropdown-flex > li {
   margin-right: 80px;
 }
 
-#content{
+.content{
     margin-top: 20px;
+    font-family: 'Titillium';
 }
 
-#fixed li:hover{
+.fixed li:hover{
   background-color: #e2332a;
 }
 
-#fixed {
+.fixed {
   position: absolute;
   display: none;
   left: 50%;
@@ -203,7 +207,7 @@ footer {
   text-align: center;
 }
 
-#dropdown:hover #fixed{
+.dropdown:hover .fixed{
     display: block;
     list-style: none;
     background-color: #17171a;

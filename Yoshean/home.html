@@ -20,33 +20,33 @@
       </table>
       <ul id="dropdown-flex">
         <li><a href="../Yoshean/home.html">Home</a></li>
-        <li id="dropdown"><a href="#">About Us</a>
-          <ul id="fixed">
-            <li id="content"><a href="../Yoshean/about.html">About</a></li>
-            <li id="content"><a href="../Yoshean/committee.html">Committee</a></li>
-            <li id="content"><a href="../Yoshean/contact.html">Contact</a></li>
+        <li class="dropdown"><a href="#">About Us</a>
+          <ul class="fixed">
+            <li class="content"><a href="../Yoshean/about.html">About</a></li>
+            <li class="content"><a href="../Yoshean/committee.html">Committee</a></li>
+            <li class="content"><a href="../Yoshean/contact.html">Contact</a></li>
           </ul>
-        <li id="dropdown"><a href="#">Rules and Regulations</a>
-          <ul id="fixed">
-            <li id="content"><a href="../Freeman/attire.html">Attire</a></li>
-            <li id="content"><a href="../Freeman/rules.html">Rules</a></li>
-            <li id="content"><a href="../Freeman/sponsors.html">Sponsors</a></li>
-            <li id="content"><a href="../Aavaneesh/faq.html">FAQ</a></li>
-          </ul>
-        </li>
-        </li>
-        <li id="dropdown"><a href="#">News and Media</a>
-          <ul id="fixed">
-            <li id="content"><a href="../Sameer/calendar.html">Calendar</a></li>
-            <li id="content"><a href="../Sameer/gallery.html">Gallery</a></li>
-            <li id="content"><a href="../Sameer/news.html">News</a></li>
+        <li class="dropdown"><a href="#">Rules and Regulations</a>
+          <ul class="fixed">
+            <li class="content"><a href="../Freeman/attire.html">Attire</a></li>
+            <li class="content"><a href="../Freeman/rules.html">Rules</a></li>
+            <li class="content"><a href="../Freeman/sponsors.html">Sponsors</a></li>
+            <li class="content"><a href="../Aavaneesh/faq.html">FAQ</a></li>
           </ul>
         </li>
-        <li id="dropdown"><a href="#">Forms</a>
-          <ul id="fixed">
-            <li id="content"><a href="../Aavaneesh/membership.html">Membership Form</a></li>
-            <li id="content"><a href="../Aavaneesh/enquiry.html">Enquiry Form</a></li>
-            <li id="content"><a href="../Aavaneesh/feedback.html">Feedback Form</a></li>
+        </li>
+        <li class="dropdown"><a href="#">News and Media</a>
+          <ul class="fixed">
+            <li class="content"><a href="../Sameer/calendar.html">Calendar</a></li>
+            <li class="content"><a href="../Sameer/gallery.html">Gallery</a></li>
+            <li class="content"><a href="../Sameer/news.html">News</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#">Forms</a>
+          <ul class="fixed">
+            <li class="content"><a href="../Aavaneesh/membership.html">Membership Form</a></li>
+            <li class="content"><a href="../Aavaneesh/enquiry.html">Enquiry Form</a></li>
+            <li class="content"><a href="../Aavaneesh/feedback.html">Feedback Form</a></li>
           </ul>
         </li>
       </ul>
@@ -55,19 +55,11 @@
  
 
 
-
-
-
-
-
-
-
-
-
-
-
-  <!-- SCROLL BAR -->
-  <section class="page-header">
+<div class="carousel-container">
+ <button class="arrow-btn left-btn" id="prevBtn" aria-label="Previous"><img src="../Images/left-image.jpg" width="10px"></button>
+  <button class="arrow-btn right-btn" id="nextBtn" aria-label="Next"><img src="../Images/right-image.jpg" width="10px"></button>
+  <div class="carousel-track" id="carouselTrack">
+    <div class="carousel-item">  <section class="page-header">
     <div class="container">
       <table>
         <tr>
@@ -76,49 +68,13 @@
             <p>Student-run karting at APU, real seat time, real circuits, no experience required.</p>
             <br>
             <a href="../Yoshean/committee.html" class="btn">Meet the Crew</a>
-            <a href="../Aavaneesh/membership.html" class="btn">Join Us</a>
           </td>
           <td id="gapimagehome"><img src="../Images/friends.png" height="300"></td>
         </tr>
       </table>
     </div>
-  </section>
-  <main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <div class="section">
-    <table>
-      <tr>
-        <td><div id="red">80+</div><div id="white">members</div></td>
-        <td><div id="red">10+</div><div id="white">events</div></td>
-        <td><div id="red">5+</div><div id="white">tracks</div></td>
-      </tr>
-    </table>
-  </div>
-
-<section class="page-header">
+  </section></div>
+    <div class="carousel-item"><section class="page-header">
   <div class="container">
     <table>
       <tr>
@@ -147,13 +103,35 @@
             <h1>This could be <span>YOU!</span></h1>
             <p>New to karting? We got you covered!</p>
             <br>
-            <a href="../Freeman/rules.html" class="btn" id="findmore">Rules and Regulations</a>
-            <a href="../Freeman/attire.html" class="btn">Attire Requirements</a>
+            <a href="../Aavaneesh/membership.html" class="btn">Join Us</a>
         </td>
         </tr>
     </table>
   </div>
-</section>
+</section></div>
+    <div class="carousel-item">Item 3</div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+  <div class="section">
+    <table>
+      <tr id="p">
+        <td><div id="red-stats-number">80+</div><div id="white-stats-description">members</div></td>
+        <td><div id="red-stats-number">10+</div><div id="white-stats-description">events</div></td>
+        <td><div id="red-stats-number">5+</div><div id="white-stats-description">tracks</div></td>
+      </tr>
+    </table>
+  </div>
+
+
 </main>
 
 <style>
@@ -185,8 +163,38 @@
   transform: scale(1.1);
   transition: transform 0.3s ease;
 }
+
+
+.carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+.carousel-track::-webkit-scrollbar {
+  display: none; /* Hides scrollbar in Chrome/Safari/Edge */
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+  scroll-snap-align: start;
+}
+
 </style>
 
   <footer>
     <p>&copy; 2026 APU Karting Club. Built for APU students.</p>
   </footer>
+
+
+
+
+
+<script>
+const track = document.getElementById('carouselTrack');
+
+document.getElementById('nextBtn').onclick = () => track.scrollLeft += track.clientWidth;
+document.getElementById('prevBtn').onclick = () => track.scrollLeft -= track.clientWidth;
+</script>
