@@ -2,13 +2,12 @@
   body {
     background-color: #0c0c0e;
     color: #f2efe8;
-    font-family: Arial, sans-serif;
+    font-family: 'Titillium';
     margin: 0;
     line-height: 1.5;
   }
  
   h1, h2, h3 {
-    font-family: Arial, sans-serif;
     color: #f2efe8;
   }
  
@@ -31,20 +30,20 @@ footer {
   border-top: 1px solid #333;
   margin-top: 60px;
 }
- 
 
+@font-face {
+    font-family: 'Orbitron';
+    src: url('fonts/Orbitron/Orbitron-VariableFont_wght.ttf') format('truetype');
+    font-weight: 400 900;
+    font-style: normal;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+@font-face {
+    font-family: 'Titillium';
+    src: url('fonts/Titillium/TitilliumWeb-Regular.ttf') format('truetype');
+    font-weight: 400 900;
+    font-style: normal;
+}
 
 
 
@@ -69,6 +68,7 @@ footer {
   .logo {
     font-size: 42px;
     font-weight: bold;
+    font-family: 'Orbitron';
   }
  
   .logo span {
@@ -87,6 +87,7 @@ footer {
   .page-header h1 {
     font-size: 40px;
     margin-bottom: 10px;
+    font-family: 'Orbitron';
   }
  
   .page-header h1 span {
@@ -126,7 +127,7 @@ footer {
 }
 
 #spacejoinusbutton{
-  padding-left: 450px;
+  padding-left: 300px;
 }
 
 .btn {
@@ -136,6 +137,7 @@ footer {
   padding: 12px 24px;
   border-radius: 4px;
   font-weight: bold;
+  font-family: 'Orbitron';
 }
 
 .btn:hover{
@@ -152,7 +154,7 @@ footer {
 
 #red-stats-number{
   font-size: 80px;
-  margin-left: 200px;
+  margin-left: 150px;
   color: #e2332a;
   font-weight: bold;
   text-align: center;
@@ -160,7 +162,7 @@ footer {
 
 #white-stats-description{
   font-size: 20px;
-  margin-left: 200px;
+  margin-left: 150px;
   text-align: center;
 }
 
@@ -178,6 +180,7 @@ footer {
   display: flex;
   margin-top: -10px;
   text-align: center;
+  font-family: 'Orbitron';
 }
 
 #dropdown-flex > li {
@@ -186,6 +189,7 @@ footer {
 
 .content{
     margin-top: 20px;
+    font-family: 'Titillium';
 }
 
 .fixed li:hover{
