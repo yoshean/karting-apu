@@ -54,7 +54,7 @@ footer {
   /* ===== NAVIGATION BAR ===== */
   nav {
     background-color: #17171a;
-    padding: 0px 0px;
+    position: fixed;
   }
  
   nav .container {
@@ -138,6 +138,13 @@ footer {
   border-radius: 4px;
   font-weight: bold;
   font-family: 'Orbitron';
+
+}
+
+#prevBtn{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
 }
 
 .btn:hover{
@@ -152,21 +159,29 @@ footer {
   margin-left: 10px;
 }
 
+
+#s {
+  display: flex;
+  justify-content: center;
+}
+
+#p {
+  margin: 0 auto;
+}
+
 #red-stats-number{
   font-size: 80px;
-  margin-left: 150px;
   color: #e2332a;
   font-weight: bold;
   text-align: center;
+  padding: 0px 100px
 }
 
 #white-stats-description{
   font-size: 20px;
-  margin-left: 150px;
   text-align: center;
+  padding: 0px 100px
 }
-
- 
 
 
 
