@@ -55,6 +55,8 @@ footer {
   nav {
     background-color: #17171a;
     position: fixed;
+    width: 100%;
+    z-index: 9000;
   }
  
   nav .container {
@@ -118,7 +120,9 @@ footer {
   }
 
 
-
+#papaya {
+  padding-top: 200px
+}
 
 
 
