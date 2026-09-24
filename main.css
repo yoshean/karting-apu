@@ -267,3 +267,24 @@ footer table{
 footer p{
   text-align: center;
 }
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  z-index: 10; 
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#prevBtn {
+  left: 10px;        
+}
+
+#nextBtn {
+  right: 10px;       
+}
