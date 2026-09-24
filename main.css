@@ -64,11 +64,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 0px;
+    padding: 15px;
   }
  
   .logo {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: bold;
     font-family: 'Orbitron';
   }
@@ -77,6 +78,16 @@ footer {
     color: #e2332a;
   }
  
+#x{
+  display: inline-block;
+  background-color: #e2332a;
+  color: #f2efe8;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Orbitron';
+}
 
  
   /* ===== PAGE HEADER ===== */
@@ -131,7 +142,7 @@ footer {
 }
 
 #spacejoinusbutton{
-  padding-left: 300px;
+  padding-left: 500px;
 }
 
 .btn {
@@ -143,12 +154,6 @@ footer {
   font-weight: bold;
   font-family: 'Orbitron';
 
-}
-
-#prevBtn{
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
 }
 
 .btn:hover{
@@ -197,9 +202,9 @@ footer {
 #dropdown-flex{
   list-style: none;
   display: flex;
-  margin-top: -10px;
   text-align: center;
   font-family: 'Orbitron';
+  margin-top: 10px
 }
 
 #dropdown-flex > li {
