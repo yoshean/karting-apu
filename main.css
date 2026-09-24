@@ -22,14 +22,7 @@
     padding: 20px;
   }
 
-footer {
-  text-align: center;
-  padding: 30px 20px;
-  color: #85888f;
-  font-size: 14px;
-  border-top: 1px solid #333;
-  margin-top: 60px;
-}
+
 
 @font-face {
     font-family: 'Orbitron';
@@ -54,7 +47,9 @@ footer {
   /* ===== NAVIGATION BAR ===== */
   nav {
     background-color: #17171a;
-    padding: 0px 0px;
+    position: fixed;
+    width: 100%;
+    z-index: 9000;
   }
  
   nav .container {
@@ -62,11 +57,12 @@ footer {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 0px;
+    padding: 15px;
   }
  
   .logo {
-    font-size: 42px;
+    font-size: 32px;
     font-weight: bold;
     font-family: 'Orbitron';
   }
@@ -75,6 +71,16 @@ footer {
     color: #e2332a;
   }
  
+#x{
+  display: inline-block;
+  background-color: #e2332a;
+  color: #f2efe8;
+  padding: 8px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 12px;
+  font-family: 'Orbitron';
+}
 
  
   /* ===== PAGE HEADER ===== */
@@ -118,7 +124,9 @@ footer {
   }
 
 
-
+#papaya {
+  padding-top: 150px
+}
 
 
 
@@ -127,7 +135,7 @@ footer {
 }
 
 #spacejoinusbutton{
-  padding-left: 300px;
+  padding-left: 500px;
 }
 
 .btn {
@@ -138,6 +146,7 @@ footer {
   border-radius: 4px;
   font-weight: bold;
   font-family: 'Orbitron';
+
 }
 
 .btn:hover{
@@ -152,21 +161,29 @@ footer {
   margin-left: 10px;
 }
 
+
+#s {
+  display: flex;
+  justify-content: center;
+}
+
+#p {
+  margin: 0 auto;
+}
+
 #red-stats-number{
   font-size: 80px;
-  margin-left: 150px;
   color: #e2332a;
   font-weight: bold;
   text-align: center;
+  padding: 0px 100px
 }
 
 #white-stats-description{
   font-size: 20px;
-  margin-left: 150px;
   text-align: center;
+  padding: 0px 100px
 }
-
- 
 
 
 
@@ -178,9 +195,9 @@ footer {
 #dropdown-flex{
   list-style: none;
   display: flex;
-  margin-top: -10px;
   text-align: center;
   font-family: 'Orbitron';
+  margin-top: 10px
 }
 
 #dropdown-flex > li {
@@ -214,3 +231,22 @@ footer {
 }
 
 
+footer {
+  text-align: center;
+  color: #85888f;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 0px;
+  background-color: #17171a;
+  width:100%
+}
+
+.footer-content a{
+  border-radius: 50%;
+}
+
+.footer-section h2{
+  font-family: 'Orbitron';
+  margin-top: 0px;
+  padding: 10px
+}
