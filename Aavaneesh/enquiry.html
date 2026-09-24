@@ -72,14 +72,14 @@
    
   <form onsubmit="alert('Thank you for your submission!'); return false;">
    <label for="Your name">Your name:</label><br>
-   <input type="text" id="name" placeholder="Benjamin Kirby Tennyson" minlength="8" maxlength="15" value size="30" style="width: 800px;" required=""><br><p></p>
+   <input type="text" id="name" placeholder="Benjamin Kirby Tennyson" minlength="10" maxlength="20" value size="30" style="width: 500px;" required><br><p></p>
 
 
    <label for="YourTP">Your TP:</label><br>
-   <input type="text" id="Your TP" placeholder="TP1776890" minlength="8" maxlength="15" value size="30" style="width: 800px;" required><br><p></p>
+   <input type="text" id="Your TP" placeholder="TP1776890" minlength="8" maxlength="15" value size="30" style="width: 500px;" required><br><p></p>
 
    <label for="message">Enter your enquiry:</label><br>
-   <textarea id="message" placeholder="Enter your enquiry:" required></textarea><br>
+   <textarea id="message" placeholder="Enter your enquiry:" minlength="10"  axlength="20" required></textarea><br>
 
    <input type="reset"><br>
    <input type="submit">
@@ -94,12 +94,20 @@
          
    <style>
     #message{
-      width: 800px;
-      height: 150px;
-      resize: none;
-      box-sizing: border-box;
+     width: 200px;
+     border: 3px red;
+     padding: 50px;
+     border-radius: 100px;
     }
-  
+
+   
+  input[type="text"]{
+  border: 3 px red;
+  border-radius: 50px ;
+  width: 90px;
+  padding: 15px;
+ }
+
  
 
    </style>
