@@ -22,14 +22,7 @@
     padding: 20px;
   }
 
-footer {
-  text-align: center;
-  padding: 30px 20px;
-  color: #85888f;
-  font-size: 14px;
-  border-top: 1px solid #333;
-  margin-top: 60px;
-}
+
 
 @font-face {
     font-family: 'Orbitron';
@@ -235,4 +228,25 @@ footer {
     display: block;
     list-style: none;
     background-color: #17171a;
+}
+
+
+footer {
+  text-align: center;
+  color: #85888f;
+  border-top: 1px solid #333;
+  margin-top: 30px;
+  padding-top: 0px;
+  background-color: #17171a;
+  width:100%
+}
+
+.footer-content a{
+  border-radius: 50%;
+}
+
+.footer-section h2{
+  font-family: 'Orbitron';
+  margin-top: 0px;
+  padding: 10px
 }
