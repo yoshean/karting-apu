@@ -232,21 +232,38 @@
 
 
 footer {
-  text-align: center;
   color: #85888f;
   border-top: 1px solid #333;
-  margin-top: 30px;
-  padding-top: 0px;
+  margin-top: 20px;
+  padding: 10px 0px;
   background-color: #17171a;
-  width:100%
+  width:100%;
+
+  max-width: 100%;
 }
 
-.footer-content a{
-  border-radius: 50%;
+footer table{
+  align-items: center
 }
 
-.footer-section h2{
+.footer-section{
+    text-align: center;
+    vertical-align: top;
+}
+
+.footer-section a:hover{
+  background-color:red
+}
+
+.footer-section h3{
   font-family: 'Orbitron';
-  margin-top: 0px;
-  padding: 10px
+  padding: 5px 30px
+}
+
+.footer-section img{
+  border-radius: 50%
+}
+
+footer p{
+  text-align: center;
 }
