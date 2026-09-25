@@ -271,11 +271,12 @@ footer p{
   top: 50%;
   transform: translateY(-50%); 
   z-index: 10; 
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(130, 93, 93, 0.5);
   color: white;
   border: none;
-  padding: 10px;
+  padding: 5px;
   cursor: pointer;
+  border-radius: 50%;
 }
 
 #prevBtn {
