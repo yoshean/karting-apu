@@ -22,14 +22,7 @@
     padding: 20px;
   }
 
-footer {
-  text-align: center;
-  padding: 30px 20px;
-  color: #85888f;
-  font-size: 14px;
-  border-top: 1px solid #333;
-  margin-top: 60px;
-}
+
 
 @font-face {
     font-family: 'Orbitron';
@@ -235,4 +228,65 @@ footer {
     display: block;
     list-style: none;
     background-color: #17171a;
+}
+
+
+footer {
+  color: #85888f;
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  padding: 10px 0px;
+  background-color: #17171a;
+  width:100%;
+
+  max-width: 100%;
+}
+
+footer table{
+  align-items: center
+}
+
+.footer-section{
+    text-align: center;
+    vertical-align: top;
+}
+
+.footer-section h3{
+  font-family: 'Orbitron';
+  padding: 5px 30px
+}
+
+.footer-section img{
+  border-radius: 50%
+}
+
+
+footer p{
+  text-align: center;
+}
+
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  z-index: 10; 
+  background: rgba(130, 93, 93, 0.5);
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#prevBtn {
+  left: 10px;        
+}
+
+#nextBtn {
+  right: 10px;       
+}
+
+#footer-section-1 a:hover{
+  background-color:#e2332a;
 }
