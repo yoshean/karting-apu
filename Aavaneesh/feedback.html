@@ -68,21 +68,24 @@
     <div class="container">
        <h1>Feedback Form</h1>
     <br>
-
-  <form  onsubmit="alert('Thank you for your submission!'); return false;">
+    <div style="background-color:#17171a; padding: 10px; border-radius: 40px; text-align:center">
+        <form  onsubmit="alert('Thank you for your submission!'); return false;">
    <label for="Your name">Your name:</label><br>
-   <input type="text" id="Your name" placeholder="Benjamin Kirby Tennyson" minlength="8" maxlength="16" value size="20" style="width: 500px;" required><br><p>
+   <input type="text" id="Your name" placeholder="Benjamin Kirby Tennyson" minlength="8" maxlength="16" value size="20" style="width: 400px" required><br><p>
 
    <label for="Your TP Number">Your TP Number:</label><br>
-   <input type="text" id="Your TP Number" placeholder="TP1776890" minlength="8" maxlength="16" value size="20" style="width: 500px;"required><br><p></p>
+   <input type="text" id="Your TP Number" placeholder="TP1776890" minlength="8" maxlength="16" value size="20" style="width: 400px" required><br><p></p>
 
-   <label for="Your Feedback" required>Your Feedback:</label><br>
-   <textarea id="feedback" required></textarea><br>
+   <label for="message">Enter your feedback:</label><br>
+   <textarea id="message" placeholder="Enter your feedback:" minlength="10"  axlength="20" required></textarea><br>
 
 
-   <input type="reset"><br>
+   <input type="reset">
    <input type="submit">
    </form>
+    </div>
+
+
     </div>
   </section>
    
@@ -153,11 +156,10 @@
  }
   
 
-   textarea {
+  #message {
    border: 3px red;
-  border-radius: 50px;
+  border-radius: 15px;
   width: 500px;
-  font-size: 20px;
   height:200px;
   padding: 15px;
   color: black;
