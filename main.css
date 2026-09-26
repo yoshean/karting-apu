@@ -66,10 +66,12 @@
     font-size: 32px;
     font-weight: bold;
     font-family: 'Orbitron';
+    white-space: nowrap;
   }
  
   .logo span {
     color: #e2332a;
+
   }
  
 #x{
@@ -133,6 +135,7 @@
 
 #gaplogotexthome{
   padding-left: 20px;
+  min-width: max-content;
 }
 
 #spacejoinusbutton{
@@ -198,7 +201,10 @@
   display: flex;
   text-align: center;
   font-family: 'Orbitron';
-  margin-top: 10px
+  margin-top: 10px;
+  max-width: 100%;
+  flex-wrap: nowrap;
+  white-space: nowrap;
 }
 
 #dropdown-flex > li {
@@ -239,6 +245,7 @@ footer {
   padding: 10px 0px;
   background-color: #17171a;
   width:100%;
+  overflow: hidden;
 
   max-width: 100%;
 }
@@ -290,4 +297,10 @@ footer p{
 
 #footer-section-1 a:hover{
   background-color:#e2332a;
+}
+
+#table{
+  max-width: 100%;
+  table-layout: fixed;
+  min-width: 10;
 }
