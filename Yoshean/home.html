@@ -276,8 +276,6 @@
   background-position: center;
 }
 
-
-
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -370,6 +368,69 @@
   .news-item p {
     color: #cfccc4;
   }
+
+  .arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); 
+  z-index: 10; 
+  background: rgba(130, 93, 93, 0.5);
+  color: white;
+  border: none;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#prevBtn {
+  left: 10px;        
+}
+
+#nextBtn {
+  right: 10px;       
+}
+
+
+#gapimagehome{
+  padding-left: 100px;
+}
+
+#findmore{
+  margin-left: 10px;
+}
+
+
+#s {
+  display: flex;
+  justify-content: center;
+}
+
+#p {
+  margin: 0 auto;
+}
+
+#red-stats-number{
+  font-size: 80px;
+  color: #e2332a;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 100px
+}
+
+#white-stats-description{
+  font-size: 20px;
+  text-align: center;
+  padding: 0px 100px
+}
+
+
+#table{
+  max-width: 100%;
+  table-layout: fixed;
+  min-width: 10;
+}
+
+
 
 
 </style>

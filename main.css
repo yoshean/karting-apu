@@ -1,28 +1,5 @@
 
-  body {
-    background-color: #0c0c0e;
-    color: #f2efe8;
-    font-family: 'Titillium';
-    margin: 0;
-    line-height: 1.5;
-  }
- 
-  h1, h2, h3 {
-    color: #f2efe8;
-  }
- 
-  a {
-    color: #f2efe8;
-    text-decoration: none;
-  }
- 
-  .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-
-
+/* 1. FONT */
 
 @font-face {
     font-family: 'Orbitron';
@@ -41,10 +18,29 @@
 
 
 
+/* 2. The Basics */
 
 
+    body {
+    background-color: #0c0c0e;
+    color: #f2efe8;
+    font-family: 'Titillium';
+    margin: 0;
+    line-height: 1.5;
+  }
+ 
+  h1, h2, h3 {
+    color: #f2efe8;
+  }
+ 
+  a {
+    color: #f2efe8;
+    text-decoration: none;
+  }
 
-  /* ===== NAVIGATION BAR ===== */
+
+/* 3. Navigation Bar */
+
   nav {
     background-color: #17171a;
     position: fixed;
@@ -61,6 +57,19 @@
     gap: 0px;
     padding: 15px;
   }
+
+  #gaplogotexthome{
+  padding-left: 20px;
+  min-width: max-content;
+}
+
+#spacejoinusbutton{
+  padding-left: 500px;
+}
+
+
+/* 4. Logo and Join Us button */
+
  
   .logo {
     font-size: 32px;
@@ -71,7 +80,6 @@
  
   .logo span {
     color: #e2332a;
-
   }
  
 #x{
@@ -85,112 +93,12 @@
   font-family: 'Orbitron';
 }
 
- 
-  /* ===== PAGE HEADER ===== */
-  .page-header {
-    text-align: center;
-    padding: 30px 20px;
-    border-bottom: 1px solid #333;
-  }
- 
-  .page-header h1 {
-    font-size: 40px;
-    margin-bottom: 10px;
-    font-family: 'Orbitron';
-  }
- 
-  .page-header h1 span {
-    color: #e2332a;
-  }
- 
-  .page-header p {
-    font-size: 17px;
-    color: #cfccc4;
-    max-width: 500px;
-    margin: 0 auto;
-  }
- 
-  /* ===== SECTION ===== */
-  .section {
-    padding: 60px 20px;
-    border-bottom: 1px solid #333;
-  }
- 
-  .section h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
-  }
- 
-  .section > .container > p.intro {
-    color: #85888f;
-    margin-bottom: 40px;
-  }
-
-
-#papaya {
-  padding-top: 150px
-}
 
 
 
-#gaplogotexthome{
-  padding-left: 20px;
-  min-width: max-content;
-}
-
-#spacejoinusbutton{
-  padding-left: 500px;
-}
-
-.btn {
-  display: inline-block;
-  background-color: #e2332a;
-  color: #f2efe8;
-  padding: 12px 24px;
-  border-radius: 4px;
-  font-weight: bold;
-  font-family: 'Orbitron';
-
-}
-
-.btn:hover{
-  background-color:#9d2620;
-}
-
-#gapimagehome{
-  padding-left: 100px;
-}
-
-#findmore{
-  margin-left: 10px;
-}
 
 
-#s {
-  display: flex;
-  justify-content: center;
-}
-
-#p {
-  margin: 0 auto;
-}
-
-#red-stats-number{
-  font-size: 80px;
-  color: #e2332a;
-  font-weight: bold;
-  text-align: center;
-  padding: 0px 100px
-}
-
-#white-stats-description{
-  font-size: 20px;
-  text-align: center;
-  padding: 0px 100px
-}
-
-
-
+/* 5. Dropdown Menu */
 
 .dropdown{
     position: relative;
@@ -238,6 +146,82 @@
 }
 
 
+
+
+
+/* 6. Section and Page Header  */
+
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  .section {
+    padding: 60px 20px;
+    border-bottom: 1px solid #333;
+  }
+ 
+  .section h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+ 
+  .section > .container > p.intro {
+    color: #85888f;
+    margin-bottom: 40px;
+  }
+
+
+#papaya {
+  padding-top: 150px
+}
+
+  .page-header {
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 1px solid #333;
+  }
+ 
+  .page-header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: 'Orbitron';
+  }
+ 
+  .page-header h1 span {
+    color: #e2332a;
+  }
+ 
+  .page-header p {
+    font-size: 17px;
+    color: #cfccc4;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+/* 7. Others  */
+
+
+.btn {
+  display: inline-block;
+  background-color: #e2332a;
+  color: #f2efe8;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-family: 'Orbitron';
+
+}
+
+.btn:hover{
+  background-color:#9d2620;
+}
+
+
+
+/* 8. Footer */
+
 footer {
   color: #85888f;
   border-top: 1px solid #333;
@@ -268,39 +252,10 @@ footer table{
   border-radius: 50%
 }
 
-
 footer p{
   text-align: center;
 }
 
-
-.arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); 
-  z-index: 10; 
-  background: rgba(130, 93, 93, 0.5);
-  color: white;
-  border: none;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-#prevBtn {
-  left: 10px;        
-}
-
-#nextBtn {
-  right: 10px;       
-}
-
 #footer-section-1 a:hover{
   background-color:#e2332a;
-}
-
-#table{
-  max-width: 100%;
-  table-layout: fixed;
-  min-width: 10;
 }
