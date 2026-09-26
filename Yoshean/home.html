@@ -8,7 +8,6 @@
 </head>
 <body>
  
-  <!-- NAV -->
   <nav>
     <div class="container">
       <table>
@@ -20,9 +19,9 @@
       </table>
       <ul id="dropdown-flex">
         <li><a href="../Yoshean/home.html">Home</a></li>
-        <li class="dropdown"><a href="#">About Us</a>
+        <li class="dropdown"><a href="#">Our Team</a>
           <ul class="fixed">
-            <li class="content"><a href="../Yoshean/about.html">About</a></li>
+            <li class="content"><a href="../Yoshean/about.html">About Us</a></li>
             <li class="content"><a href="../Yoshean/committee.html">Committee</a></li>
             <li class="content"><a href="../Yoshean/contact.html">Contact</a></li>
           </ul>
@@ -218,15 +217,71 @@
     </table>
   </div>
 
+<div>
+<section class="section" style="padding-top:0;">
+  <div class="container">
+    <h2>Latest news</h2>
+<table>
+  <tr>
+    <td>
+      <div class="news-item featured">
+      <span class="news-tag">Latest</span>
+      <div class="news-date">20 October 2026</div>
+      <h3>Season standings updated after Round 2</h3>
+      <p>The grid tightened up after a close second round at Aylezo Speedway Circuit, with three drivers now separated by under ten points.</p>
+    </div></td>
+    <td>
+      <div class="news-item">
+      <span class="news-tag">Sessions</span>
+      <div class="news-date">5 October 2026</div>
+      <h3>Sign-ups open for the September session</h3>
+      <p>All 20 seats for the upcoming session are now open to members. Check the Calendar page for the date and time.</p>
+    </div></td>
+    <td>
+      <div class="news-item" style="background-image: url('../Images/redbull logo.png');">
+        <span class="news-tag">Sponsors</span>
+        <div class="news-date">28 September 2026</div>
+        <img src="" width=50px>
+      <h3>New sponsor joins the club</h3>
+      <p>We're excited to welcome a new sponsor on board for the rest of the season. More details on the Sponsors page.</p>
+    </div>
+  </td>
+  </tr>
+</table>
+
+
+
+
+
+
+  </div>
+</section>
+
+
+
+
+  </div>
+
 
 </main>
 
 <style>
+
+
+.news-item{
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
   .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 5px;
   }
+
 
   .gallery-box {
     background-color: #1c1c1f;
@@ -269,6 +324,55 @@
   scroll-snap-align: start;
 }
 
+  .news-item {
+    background-color: #17171a;
+    border: 1px solid #333;
+    border-left: 4px solid #e2332a;
+    border-radius: 6px;
+    padding: 24px 28px;
+    margin-bottom: 18px;
+  }
+
+  .news-item.featured {
+    border-left: 4px solid #f31d12;
+    background-color: #1c1c1f;
+  }
+
+  .news-tag {
+    display: inline-block;
+    background-color: #e2332a;
+    color: #f2efe8;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin-bottom: 12px;
+  }
+
+  .news-item.featured .news-tag {
+    background-color: #f31d12;
+    color: #cfccc4;
+  }
+
+  .news-date {
+    color: #85888f;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .news-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .news-item p {
+    color: #cfccc4;
+  }
+
+  .news-item img{
+    width:auto;
+  }
+
 </style>
 
   <footer>
@@ -281,7 +385,7 @@
       </td>  
 
       <td class="footer-section" id="footer-section-1">
-        <h3>About Us:</h3>
+        <h3>Our Team:</h3>
         <a href="../Yoshean/about.html">About Us</a><br><br>
         <a href="../Yoshean/committee.html">Our Community</a><br>
       </td>
