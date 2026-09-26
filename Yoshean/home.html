@@ -4,6 +4,165 @@
     <title>APU Karting Club: Home</title>
     <link rel="icon" type="image/jpeg" href="../Images/logo.jpg">
     <link rel="stylesheet" href="../main.css">
+    <style>
+    
+    .news-item{
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+    }
+    
+    .gallery {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 5px;
+    }
+    
+    .gallery-box {
+      background-color: #1c1c1f;
+      border-left: 5px solid #e2332a;
+      border-radius: 6px;
+      height: 130px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+    }
+    
+    .gallery-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .gallery-box img:hover{
+      transform: scale(1.1);
+      transition: transform 0.3s ease;
+    }
+    
+    
+    .carousel-track {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+    }
+    
+    .carousel-track::-webkit-scrollbar {
+      display: none;
+    }
+    
+    .carousel-item {
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+    }
+    
+    .news-item {
+      background-color: #17171a;
+      border: 1px solid #333;
+      border-left: 4px solid #e2332a;
+      border-radius: 6px;
+      padding: 24px 28px;
+      margin-bottom: 18px;
+    }
+    
+    .news-item.featured {
+      border-left: 4px solid #f31d12;
+      background-color: #1c1c1f;
+    }
+
+    .news-tag {
+      display: inline-block;
+      background-color: #e2332a;
+      color: #f2efe8;
+      font-size: 11px;
+      font-weight: bold;
+      padding: 4px 10px;
+      border-radius: 3px;
+      margin-bottom: 12px;
+    }
+
+  .news-item.featured .news-tag {
+    background-color: #f31d12;
+    color: #cfccc4;
+  }
+
+  .news-date {
+    color: #85888f;
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .news-item h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .news-item p {
+    color: #cfccc4;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); 
+    z-index: 10;
+    background: rgba(130, 93, 93, 0.5);
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  #prevBtn {
+    left: 10px;
+  }
+  
+  #nextBtn{
+    right: 10px;
+  }
+  
+  #gapimagehome{
+    padding-left: 100px;
+  }
+  
+  #findmore{
+    margin-left: 10px;
+  }
+  
+  #s {
+    display: flex;
+    justify-content: center;
+  }
+  
+  #p {
+    margin: 0 auto;
+  }
+  
+  #red-stats-number{
+    font-size: 80px;
+    color: #e2332a;
+    font-weight: bold;
+    text-align: center;
+    padding: 0px 100px
+  }
+  
+  #white-stats-description{
+    font-size: 20px;
+    text-align: center;
+    padding: 0px 100px
+  }
+  
+  #table{
+    max-width: 100%;
+    table-layout: fixed;
+    min-width: 10;
+  }
+
+</style>
   </head>
   <body>
     <header>
@@ -280,173 +439,7 @@
 
 </main>
 
-<style>
 
-
-.news-item{
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-}
-
-  .gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
-  }
-
-
-  .gallery-box {
-    background-color: #1c1c1f;
-    border-left: 5px solid #e2332a;
-    border-radius: 6px;
-    height: 130px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-  }
-
-  .gallery-box img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-
-.gallery-box img:hover{
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
-}
-
-
-.carousel-track {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  scroll-snap-type: x mandatory;
-  scrollbar-width: none; /* Hides scrollbar in Firefox */
-}
-
-.carousel-track::-webkit-scrollbar {
-  display: none; /* Hides scrollbar in Chrome/Safari/Edge */
-}
-
-.carousel-item {
-  flex: 0 0 100%;
-  scroll-snap-align: start;
-}
-
-  .news-item {
-    background-color: #17171a;
-    border: 1px solid #333;
-    border-left: 4px solid #e2332a;
-    border-radius: 6px;
-    padding: 24px 28px;
-    margin-bottom: 18px;
-  }
-
-  .news-item.featured {
-    border-left: 4px solid #f31d12;
-    background-color: #1c1c1f;
-  }
-
-  .news-tag {
-    display: inline-block;
-    background-color: #e2332a;
-    color: #f2efe8;
-    font-size: 11px;
-    font-weight: bold;
-    padding: 4px 10px;
-    border-radius: 3px;
-    margin-bottom: 12px;
-  }
-
-  .news-item.featured .news-tag {
-    background-color: #f31d12;
-    color: #cfccc4;
-  }
-
-  .news-date {
-    color: #85888f;
-    font-size: 13px;
-    margin-bottom: 8px;
-  }
-
-  .news-item h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-  }
-
-  .news-item p {
-    color: #cfccc4;
-  }
-
-  .arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%); 
-  z-index: 10; 
-  background: rgba(130, 93, 93, 0.5);
-  color: white;
-  border: none;
-  padding: 5px;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-#prevBtn {
-  left: 10px;        
-}
-
-#nextBtn {
-  right: 10px;       
-}
-
-
-#gapimagehome{
-  padding-left: 100px;
-}
-
-#findmore{
-  margin-left: 10px;
-}
-
-
-#s {
-  display: flex;
-  justify-content: center;
-}
-
-#p {
-  margin: 0 auto;
-}
-
-#red-stats-number{
-  font-size: 80px;
-  color: #e2332a;
-  font-weight: bold;
-  text-align: center;
-  padding: 0px 100px
-}
-
-#white-stats-description{
-  font-size: 20px;
-  text-align: center;
-  padding: 0px 100px
-}
-
-
-#table{
-  max-width: 100%;
-  table-layout: fixed;
-  min-width: 10;
-}
-
-
-
-
-</style>
 
 
 
